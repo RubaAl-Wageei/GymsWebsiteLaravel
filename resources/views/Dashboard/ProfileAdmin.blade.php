@@ -79,7 +79,7 @@
                     </div>
                     <hr class="my-0" />
                     <div class="card-body">
-                      <form id="formAccountSettings" onsubmit="return false" action="{{route('user.update', (Auth()->user()->id))}}" method="POST" enctype="multipart/form-data">
+                      <form  action="{{route('user.update', (Auth()->user()->id))}}" method="POST" enctype="multipart/form-data">
                         @method('PUT')
                         @csrf
                         <div class="row">
