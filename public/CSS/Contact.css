@@ -1,0 +1,212 @@
+
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.Head{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url("../Images/ContactUs.jpg");
+    position: relative;
+    background-size: cover;
+    background-position:bottom;
+
+}
+
+.navFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 6%;
+    padding-right: 6%;
+    font-size: 17px;
+
+}
+
+.Logo{
+    width: 70px;
+    height: 70px;
+}
+nav li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 24px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: #ffca2cc4;
+}
+
+.SearchBar{
+    height: 28px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.SearchBar input{
+    width: 0px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 1s;
+    background: transparent;
+}
+
+.SearchBar:hover input{
+    width: 120px;
+}
+.SearchBar a .fas{
+    color: #ffca2cc4;
+    font-size: 18px;
+}
+
+.icon{
+    color: white;
+}
+
+.icons a{
+    text-decoration: none;
+}
+.icon:hover{
+    color: #ffca2cc4;
+
+}
+
+
+
+.title
+{
+    color: rgb(184, 187, 187) ;
+    background-color: rgb(184, 187, 187);
+    opacity: 0.3;
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    height:60px;
+    text-align: center;
+}
+div>h3
+{
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    text-align: center;
+
+    font-family: 'Merriweather', serif;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+.Subject h2{
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    margin-top: 220px;
+}
+
+.Subject p {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Subject button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color:#ffca2cc4;
+    text-align: center;
+    cursor: pointer;
+    width: 20%;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 40%;
+    border-radius: 30px;
+}
+
+
+/* ///////////////////////// END CSS FOR LANDING PAGE AND NAV BAR////////////////////// */
+
+
+section{
+    padding: 100px;
+
+}
+
+
+
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+.contact3 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.contact3 h1,
+.contact3 h2,
+.contact3 h3,
+.contact3 h4,
+.contact3 h5,
+.contact3 h6 {
+  color: #3e4555;
+}
+
+.contact3 .font-weight-medium {
+  font-weight: 500;
+}
+
+.contact3 .card-shadow {
+  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+
+.contact3 .btn-danger-gradiant {
+  background: #ffca2cc4;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ffca2cc4 0%, #ff6a5b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ffca2cc4), to(#ff6a5b));
+  background: -webkit-linear-gradient(left, #ffca2cc4 0%, #50f5d9c4 100%);
+  background: -o-linear-gradient(left, #ffca2cc4 0%, #ff6a5b 100%);
+  background: linear-gradient(to right, #ffca2cc4 0%, #50f5d9c4 100%);
+}
+
+.contact3 .btn-danger-gradiant:hover {
+  background: #ff6a5b;
+  background: -webkit-linear-gradient(legacy-direction(to right), #50f5d9c4 0%, #ffca2cc4 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#50f5d9c4));
+  background: -webkit-linear-gradient(left, #ff6a5b 0%, #ffca2cc4 100%);
+  background: -o-linear-gradient(left, #ffca2cc4 0%, #50f5d9c4 100%);
+  background: linear-gradient(to right, #50f5d9c4 0%, #ffca2cc4 100%);
+}
+
+.img-fluid{
+    width:700px;
+    height:400px;
+}

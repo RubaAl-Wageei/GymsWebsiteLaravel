@@ -1,0 +1,274 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.Head{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url("../Images/ourgym.jpg");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 6%;
+    padding-right: 6%;
+    font-size: 17px;
+
+}
+
+.Logo{
+    width: 70px;
+    height: 70px;
+}
+nav li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 24px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color:#ffca2cc4
+}
+
+.SearchBar{
+    height: 28px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.SearchBar input{
+    width: 0px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 1s;
+    background: transparent;
+}
+
+.SearchBar:hover input{
+    width: 120px;
+}
+.SearchBar a .fas{
+    color: #ffca2cc4;
+    font-size: 18px;
+}
+
+.icon{
+    color: white;
+}
+
+.icon:hover{
+    color: #ffca2cc4;
+}
+
+.WelcomeContent{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+.Welcome{
+    color: white;
+    padding: 40px 0px;
+    font-size: 70px;
+}
+
+.Welcome1{
+    color: white;
+    padding: 10px 0px;
+    font-size: 55px;
+}
+
+.Welcome2{
+    color: white;
+    padding: 10px 0px;
+    font-size: 55px;
+}
+
+.Welcome2 span{
+    color: rgb(255, 174, 0);
+
+}
+
+.WelcomeContent span a {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    border: 2px solid white;
+    padding: 14px 70px;
+    border-radius: 15px;
+    margin-top: 55px;
+    transition: 0.4s;
+}
+
+.WelcomeContent a:hover{
+color: #ffc106c4;
+background-color: white;
+}
+
+.Homevid{
+position: absolute;
+width: 100%;
+right: 0px;
+bottom: 0px;
+z-index: -1;
+height: 100vh;
+}
+
+.Subject h2{
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    margin-top: 220px;
+}
+
+.Subject p {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Subject button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color:#ffca2cc4;
+    text-align: center;
+    cursor: pointer;
+    width: 20%;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 40%;
+    border-radius: 30px;
+}
+
+
+@media (min-aspect-ratio: 16/9){
+    .Homevid{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .Homevid{
+        width: auto;
+        height: 100%;
+    }
+
+}
+
+/* Section Our Gyms */
+
+.title{
+    padding: 20px;
+}
+
+.title h2 {
+    text-align: center;
+    font-size: 60px;
+    color: #ffc106c4;
+
+}
+
+.cards {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin-top: 2%;
+   margin-bottom: 5%;
+   padding: 50px;
+   }
+
+.developer{
+    margin: 10px 135px;
+   }
+
+.card {
+   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4);
+   max-width: 400px;
+   margin: auto;
+   text-align: center;
+   margin-top: 3%;
+   padding: 2%;
+   background-color: white;
+   border-radius: 10px;
+   }
+
+   .card h2 {
+   margin-top: 10px;
+   }
+
+   .card img {
+    border-radius: 70px;
+    width: 50%;
+   }
+
+   #img{
+    width: 100%;
+   }
+
+   .tittle {
+   color: grey;
+   font-size: 18px;
+   }
+
+   p{
+   margin-top: 10px;
+   }
+
+   button {
+   border: none;
+   outline: 0;
+   display: inline-block;
+   padding: 8px;
+   color: white;
+   background-color:#ffca2cc4;
+   text-align: center;
+   cursor: pointer;
+   width: 100%;
+   font-size: 15px;
+   margin-top: 10px;
+   border-radius: 30px;
+   }
+
+   a {
+   text-decoration: none;
+   font-size: 18px;
+   color: white;
+   }
+
+   button:hover, a:hover {
+   opacity: 0.7;
+   }

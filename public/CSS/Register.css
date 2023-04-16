@@ -1,0 +1,189 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.Head{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url("../Images/Register.jpg");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 6%;
+    padding-right: 6%;
+    font-size: 17px;
+
+}
+
+.Logo{
+    width: 70px;
+    height: 70px;
+}
+nav li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 24px;
+
+}
+
+nav ul li a{
+    text-decoration: none !important;
+    color: white;
+}
+
+nav ul li a:hover{
+    text-decoration: none !important;
+    color:#ffca2cc4
+}
+
+.SearchBar{
+    height: 28px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.SearchBar input{
+    width: 0px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 1s;
+    background: transparent;
+}
+
+.SearchBar:hover input{
+    width: 120px;
+}
+.SearchBar a .fas{
+    color: #ffca2cc4;
+    font-size: 18px;
+}
+
+.icons a{
+    text-decoration: none;
+}
+
+.icon{
+    color: white;
+}
+
+.icon:hover{
+    color: #ffca2cc4;
+}
+
+.LoginForm{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 40%;
+    border-radius: 30px;
+    margin: 40px auto;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 5px 3px 8px #888888;
+    /* text-align: center; */
+    height: 80%;
+    padding: 30px;
+}
+
+.LoginForm h2 {
+    color:Black;
+    /* text-align: center; */
+    margin-left: 40px;
+}
+
+.LoginForm label{
+    font-size: 15px;
+    margin-left: 60px;
+}
+
+.LoginForm input{
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 5px;
+    width: 70%;
+    margin-left: 50px;
+    padding: 7px;
+}
+
+.LoginForm button{
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+
+    background-color: #ffca2cc4;
+    border-color: #ffca2cc4;
+    margin-left: 60px;
+}
+
+#Register {
+    color:white;
+    text-decoration: none;
+
+}
+
+#Register a{
+    color:white;
+    text-decoration: none;
+
+}
+
+#Login{
+    border-color: #ffca2cc4 ;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-left: 20px;
+}
+
+#Login a{
+    color:#ffbf00c4;
+    text-decoration: none;
+
+}
+
+
+/* .Homevid{
+position: absolute;
+width: 100%;
+right: 0px;
+bottom: 0px;
+z-index: -1;
+height: 100vh;
+} */
+
+
+@media (min-aspect-ratio: 16/9){
+    .Homevid{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .Homevid{
+        width: auto;
+        height: 100%;
+    }
+
+}
