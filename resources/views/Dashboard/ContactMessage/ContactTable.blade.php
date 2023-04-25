@@ -73,7 +73,7 @@
                             <form action="{{Route('Contact.destroy',$Message->id)}}" method="POST" >
                                 @method('DELETE')
                                 @csrf
-                                <button type="submit" class="btn btn-outline-primary">Delete</button>
+                                <button type="submit" class="btn btn-outline-danger">Delete</button>
                               </form>
 
                           </td>

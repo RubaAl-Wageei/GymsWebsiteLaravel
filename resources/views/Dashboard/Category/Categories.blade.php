@@ -27,7 +27,7 @@
 
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Tables /</span> Category</h4>
-              <a href="{{route('category.create')}}"><button type="button" class="btn btn-outline-primary mb-5">New Category</button></a>
+              <a href="{{route('category.create')}}"><button type="button" class="btn btn-outline-warning mb-5">New Category</button></a>
 
 
               <!-- Hoverable Table rows -->
@@ -63,7 +63,7 @@
                             <td>{{$category->Description}}</td>
                             <td>
                                 <div>
-                                    <button type="button" class="btn btn-outline-primary mb-3">
+                                    <button type="button" class="btn btn-outline-warning mb-3">
                                         <a  href="{{route('category.edit', $category->id)}}"
                                         > Edit</a>
                                     </button>
@@ -71,7 +71,7 @@
                                 <form action="{{Route('category.destroy',$category->id)}}" method="POST" >
                                     @method('DELETE')
                                     @csrf
-                                    <button type="submit" class="btn btn-outline-primary">Delete</button>
+                                    <button type="submit" class="btn btn-outline-warning">Delete</button>
                                 </form>
                             </td>
                         </tr>

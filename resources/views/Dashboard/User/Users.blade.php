@@ -27,7 +27,7 @@
 
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Tables /</span> Users</h4>
-              <a href="{{route('user.create')}}"><button type="button" class="btn btn-outline-primary mb-5">New User</button></a>
+              <a href="{{route('user.create')}}"><button type="button" class="btn btn-outline-warning mb-5">New User</button></a>
 
 
               <!-- Hoverable Table rows -->
@@ -110,7 +110,7 @@
                             </form> --}}
 
                             <div>
-                                <button type="button" class="btn btn-outline-primary mb-3">
+                                <button type="button" class="btn btn-outline-warning mb-3">
                                     <a  href="{{route('user.edit', $user->id)}}"
                                     > Edit</a>
                                 </button>
@@ -121,7 +121,7 @@
                             <form action="{{Route('user.destroy',$user->id)}}" method="POST" >
                                 @method('DELETE')
                                 @csrf
-                                <button type="submit" class="btn btn-outline-primary">Delete</button>
+                                <button type="submit" class="btn btn-outline-warning">Delete</button>
                               </form>
 
                           </td>
