@@ -189,7 +189,7 @@ section{
 }
 
 .contact3 .btn-danger-gradiant {
-  background: #ffca2cc4;
+  background: rgba(255, 202, 44, 0.769);
   background: -webkit-linear-gradient(legacy-direction(to right), #ffca2cc4 0%, #ff6a5b 100%);
   background: -webkit-gradient(linear, left top, right top, from(#ffca2cc4), to(#ff6a5b));
   background: -webkit-linear-gradient(left, #ffca2cc4 0%, #50f5d9c4 100%);

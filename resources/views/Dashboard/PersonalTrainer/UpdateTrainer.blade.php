@@ -3,6 +3,7 @@
 
 
 @include('Layout.master')
+@section('TrainersActive', 'active')
 
   <body>
     <!-- Layout wrapper -->

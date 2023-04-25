@@ -3,6 +3,7 @@
 
 
 @include('Layout.master')
+@section('TrainerServiceActive', 'active')
 
 
   <body>

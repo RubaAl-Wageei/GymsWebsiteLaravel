@@ -38,13 +38,13 @@
                             <mask id="mask-2" fill="white">
                               <use xlink:href="#path-1"></use>
                             </mask>
-                            <use fill="#696cff" xlink:href="#path-1"></use>
+                            <use fill="#ffca2cc4" xlink:href="#path-1"></use>
                             <g id="Path-3" mask="url(#mask-2)">
-                              <use fill="#696cff" xlink:href="#path-3"></use>
+                              <use fill="#FF857A" xlink:href="#path-3"></use>
                               <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-3"></use>
                             </g>
                             <g id="Path-4" mask="url(#mask-2)">
-                              <use fill="#696cff" xlink:href="#path-4"></use>
+                              <use fill="#FF857A" xlink:href="#path-4"></use>
                               <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-4"></use>
                             </g>
                           </g>
@@ -52,7 +52,7 @@
                             id="Triangle"
                             transform="translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) "
                           >
-                            <use fill="#696cff" xlink:href="#path-5"></use>
+                            <use fill="#FBCE48C4" xlink:href="#path-5"></use>
                             <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-5"></use>
                           </g>
                         </g>
@@ -60,7 +60,7 @@
                     </g>
                   </svg>
                 </span>
-                <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span>
+                <span class="app-brand-text demo menu-text fw-bolder ms-2">GOGO GYM</span>
               </a>
 
               <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -72,14 +72,14 @@
 
             <ul class="menu-inner py-1">
               <!-- Dashboard -->
-              <li class="menu-item active">
+              <li class="menu-item @yield('DashboardActive')">
                 <a href="/Admin" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-home-circle"></i>
                   <div data-i18n="Analytics">Dashboard</div>
                 </a>
               </li>
 
-              <li class="menu-item">
+              <li class="menu-item @yield('UsersActive')">
                 <a href="/user" class="menu-link">
                   {{-- <i class="menu-icon tf-icons bx bx-home-circle"></i> --}}
                   <i class='menu-icon tf-icons bx bx-user'></i>
@@ -87,7 +87,7 @@
                 </a>
               </li>
 
-              <li class="menu-item">
+              <li class="menu-item @yield('CategoryActive')">
                 <a href="/category" class="menu-link">
                   <i class='menu-icon tf-icons bx bx-category-alt'></i>
                   <div data-i18n="Analytics">Category</div>
@@ -133,19 +133,19 @@
               <li class="menu-header small text-uppercase">
                 <span class="menu-header-text">Pages</span>
               </li>
-              <li class="menu-item">
+              <li class="menu-item @yield('GymActive')">
                 <a href="/Gym" class="menu-link">
                   <i class='menu-icon bx bx-dumbbell'></i>
                   <div data-i18n="Analytics">Gyms</div>
                 </a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item @yield('TrainersActive')">
                 <a href="/Trainers" class="menu-link">
                     <i class='menu-icon bx bx-group'></i>
                   <div data-i18n="Analytics">Personal Trainers</div>
                 </a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item @yield('ContactActive')">
                 <a href="/Contact" class="menu-link">
                     <i class='menu-icon bx bx-message-rounded-dots'></i>
                   <div data-i18n="Analytics">Contact</div>
@@ -155,13 +155,13 @@
               <li class="menu-header small text-uppercase">
                 <span class="menu-header-text">Services</span>
               </li>
-              <li class="menu-item">
+              <li class="menu-item @yield('GymServiceActive')">
                 <a href="/GymServices" class="menu-link">
                   <i class='menu-icon bx bx-dumbbell'></i>
                   <div data-i18n="Analytics">Gyms Services</div>
                 </a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item @yield('TrainerServiceActive')">
                 <a href="/TrainerServices" class="menu-link">
                     <i class='menu-icon bx bx-group'></i>
                   <div data-i18n="Analytics">Personal Trainers Services</div>

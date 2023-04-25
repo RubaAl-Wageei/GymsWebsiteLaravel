@@ -1,5 +1,6 @@
 
 @include('Layout.master')
+@section('CategoryActive', 'active')
 
 
   <body>

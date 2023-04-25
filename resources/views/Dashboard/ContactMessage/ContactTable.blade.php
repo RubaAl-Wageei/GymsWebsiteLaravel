@@ -2,6 +2,7 @@
 
 
 @include('Layout.master')
+@section('ContactActive', 'active')
 
 
   <body>
