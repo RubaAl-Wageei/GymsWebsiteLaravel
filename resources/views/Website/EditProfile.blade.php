@@ -42,16 +42,33 @@
     <div class="Head">
         <nav class="navFlex">
 
-            <img class="Logo" src="">
+            <img class="Logo" src="../Images/Logo.png">
             <ul>
                 <li><a href="/">HOME</a></li>
                 <li><a href="/Gyms">GYMS</a></li>
                 <li><a href="/PersonalTrainers">PERSONAL TRAINERS</a></li>
-                <li><a href="">PRODUCT</a></li>
+                {{-- <li><a href="">PRODUCT</a></li> --}}
                 <li><a href="/About">ABOUT</a></li>
                 <li><a href="{{route('Contact.create')}}">CONTACT</a></li>
+                @if (!Auth::user())
+                    <li><a href="/Register">REGISTER</a></li>
+                   <li><a href="/Login">LOGIN</a></li>
+
+                   @else
+                   @if (auth()->user()->Role!='User')
+                   <li><a href="/ProfileUser" style="color:#ffca2cc4;" >PROFILE</a></li>
+                   <li><a href="/Admin" target="_blank">DASHBOARD</a></li>
+                   <li><a href="{{route('logout')}}">LOGOUT</a></li>
+
+                   @else
+
+                   <li><a href="/ProfileUser"style="color:#ffca2cc4;" >PROFILE</a></li>
+                   <li><a href="{{route('logout')}}">LOGOUT</a></li>
+
+                   @endif
+                    @endif
                 <!-- <li><a href="">REGISTER</a></li> -->
-                <li><a href="/Login" >LOGIN</a></li>
+                {{-- <li><a href="/Login" >LOGIN</a></li> --}}
             </ul>
                 {{-- search icon in nav bar --}}
                  <div class="SearchBar">
@@ -62,7 +79,7 @@
                 </div>
                    {{--  start icon for navbar --}}
                 <div class="icons">
-                    <a href=""> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    {{-- <a href=""> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                         <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
@@ -74,7 +91,7 @@
                         <circle cx="17" cy="19" r="2"></circle>
                         <path d="M17 17h-11v-14h-2"></path>
                         <path d="M6 5l14 1l-1 7h-13"></path>
-                    </svg> </a>
+                    </svg> </a> --}}
                     <a href=""> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <circle cx="12" cy="12" r="9"></circle>

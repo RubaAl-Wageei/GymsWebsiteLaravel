@@ -180,12 +180,12 @@
                     <div class="error">{{ $message }}</div>
                    @enderror
                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
-                    @if(session()->has('message'))
+                  </div>
+                  @if(session()->has('message'))
                             <div class="alert alert-danger">
                                 {{ session()->get('message') }}
                             </div>
                         @endif
-                  </div>
                 </div>
                 <div class="mb-3">
                   <div class="form-check">

@@ -15,7 +15,7 @@
     <div class="Head">
         <nav class="navFlex">
 
-            <img class="Logo" src="../Images/logo.gif">
+            <img class="Logo" src="../Images/Logo.png">
 
             <!-- <video autoplay loop muted plays-inline class="Homevid">
                 <source src="../Videos/POWER  🔥 GYM MOTIVATION.mp4" type="video/mp4">
@@ -28,21 +28,29 @@
                     <li><a href="/About">ABOUT</a></li>
                     <li><a href="{{route('Contact.create')}}">CONTACT</a></li>
                     @if (!Auth::user())
-
-
                     <li><a href="/Register">REGISTER</a></li>
                    <li><a href="/Login">LOGIN</a></li>
 
                    @else
+                   @if (auth()->user()->Role!='User')
+                   <li><a href="/ProfileUser">PROFILE</a></li>
+                   <li><a href="/Admin" target="_blank">DASHBOARD</a></li>
+                   <li><a href="{{route('logout')}}">LOGOUT</a></li>
+
+                   @else
+
+                   <li><a href="/ProfileUser">PROFILE</a></li>
+                   <li><a href="{{route('logout')}}">LOGOUT</a></li>
+
+                   @endif
                    {{-- <li><a href="/Account">Account</a></li> --}}
-                  <li><a href="/ProfileUser">PROFILE</a></li>
-                  <li><a href="{{route('logout')}}">LOGOUT</a></li>
+                  {{-- <li><a href="/ProfileUser">PROFILE</a></li>
+                  <li><a href="{{route('logout')}}">LOGOUT</a></li> --}}
                    {{-- <a href="/ProfileUser"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                         <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
                     </svg> </a> --}}
-
                     @endif
                 </ul>
                 <div class="SearchBar">
@@ -80,6 +88,14 @@
                     </svg> </a>
                 </div>
         </nav>
+
+
+
+
+
+
+
+
     </div>
 
 

@@ -174,10 +174,10 @@
                 </a>
               </li> --}}
               <li class="menu-item">
-                <a href="javascript:void(0);" class="menu-link menu-toggle">
+                {{-- <a href="javascript:void(0);" class="menu-link menu-toggle">
                   <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
                   <div data-i18n="Authentications">Authentications</div>
-                </a>
+                </a> --}}
                 <ul class="menu-sub">
                   <li class="menu-item">
                     <a href="auth-login-basic.html" class="menu-link" target="_blank">
@@ -356,9 +356,9 @@
               </li> --}}
 
               <!-- Forms & Tables -->
-              <li class="menu-header small text-uppercase"><span class="menu-header-text">Forms &amp; Tables</span></li>
+              {{-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Forms &amp; Tables</span></li> --}}
               <!-- Forms -->
-              <li class="menu-item">
+              {{-- <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
                   <i class="menu-icon tf-icons bx bx-detail"></i>
                   <div data-i18n="Form Elements">Form Elements</div>
@@ -375,8 +375,8 @@
                     </a>
                   </li>
                 </ul>
-              </li>
-              <li class="menu-item">
+              </li> --}}
+              {{-- <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
                   <i class="menu-icon tf-icons bx bx-detail"></i>
                   <div data-i18n="Form Layouts">Form Layouts</div>
@@ -393,14 +393,14 @@
                     </a>
                   </li>
                 </ul>
-              </li>
+              </li> --}}
               <!-- Tables -->
-              <li class="menu-item">
+              {{-- <li class="menu-item">
                 <a href="/Table" class="menu-link">
                   <i class="menu-icon tf-icons bx bx-table"></i>
                   <div data-i18n="Tables">Tables</div>
                 </a>
-              </li>
+              </li> --}}
               <!-- Misc -->
               {{-- <li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li>
               <li class="menu-item">

@@ -27,7 +27,7 @@
 
             <div class="container-xxl flex-grow-1 container-p-y">
               <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Tables /</span> Users</h4>
-              <a href="{{route('user.create')}}"><button type="button" class="btn btn-outline-warning mb-5">New User</button></a>
+              {{-- <a href="{{route('user.create')}}"><button type="button" class="btn btn-outline-warning mb-5">New User</button></a> --}}
 
 
               <!-- Hoverable Table rows -->
@@ -76,7 +76,7 @@
 
                         <td>{{$user->password}}</td>
 
-                        <td><span class="badge bg-label-primary me-1">{{$user->Role}}</span></td>
+                        <td><span class="badge bg-label-dark me-1">{{$user->Role}}</span></td>
                         {{-- <td>
                           <div class="dropdown">
                             <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
@@ -110,10 +110,10 @@
                             </form> --}}
 
                             <div>
-                                <button type="button" class="btn btn-outline-warning mb-3">
+                                {{-- <button type="button" class="btn btn-outline-warning mb-3">
                                     <a  href="{{route('user.edit', $user->id)}}"
                                     > Edit</a>
-                                </button>
+                                </button> --}}
 
 
                             </div>
@@ -121,7 +121,7 @@
                             <form action="{{Route('user.destroy',$user->id)}}" method="POST" >
                                 @method('DELETE')
                                 @csrf
-                                <button type="submit" class="btn btn-outline-warning">Delete</button>
+                                <button type="submit" class="btn btn-outline-danger">Delete</button>
                               </form>
 
                           </td>

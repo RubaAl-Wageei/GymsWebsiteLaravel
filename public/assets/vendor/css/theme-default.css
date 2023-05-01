@@ -300,19 +300,19 @@ button.list-group-item-primary.active {
 }
 
 .nav-pills .nav-link.active, .nav-pills .nav-link.active:hover, .nav-pills .nav-link.active:focus {
-  background-color: #696cff;
+  background-color: #ffab00;
   color: #fff;
-  box-shadow: 0 2px 4px 0 rgba(105, 108, 255, 0.4);
+  box-shadow: 0 2px 4px 0 rgba(255, 171, 0, 0.4);
 }
 
 .form-control:focus,
 .form-select:focus {
-  border-color: #696cff;
+  border-color: #ffab00 ;
 }
 
 .input-group:focus-within .form-control,
 .input-group:focus-within .input-group-text {
-  border-color: #696cff;
+  border-color: #ffab00;
 }
 
 .form-check-input:focus {
