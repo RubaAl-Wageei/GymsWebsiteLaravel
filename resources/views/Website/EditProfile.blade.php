@@ -107,7 +107,7 @@
     {{-- just to read information  --}}
     <div class="page-content page-container" id="page-content">
   {{-- ///////////// start form update data //////////////  --}}
-      <form action="{{route('user.update', (Auth()->user()->id))}}" method="POST" enctype="multipart/form-data">
+      <form action="{{route('UserProfile.update', (Auth()->user()->id))}}" method="POST" enctype="multipart/form-data">
         @method('PUT')
         @csrf
         <div class="padding">
@@ -120,7 +120,13 @@
                                                             <div class="col-sm-4 bg-c-lite-green user-profile">
                                                                 <div class="card-block text-center text-white">
                                                                     <div class="m-b-25">
-                                                                        <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image">
+                                                                        {{-- <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius" alt="User-Profile-Image"> --}}
+                                                                        <img src="../assets/img/avatars/UserDefaultImage.png" class="img-radius" alt="User-Profile-Image" width="60px">
+                                                                        {{-- @if (auth()->check() && auth()->user()->User_image == NULL)
+                                                                        <img src="../assets/img/avatars/UserDefaultImage.png" class="img-radius" alt="User-Profile-Image" width="60px" >
+                                                                        @else
+                                                                        <img src="{{ asset('storage/Images/' . Auth::user()->User_image)}}" class="img-radius image_profile" alt="User Image">
+                                                                        @endif --}}
                                                                     </div>
                                                                     <h6 class="f-w-600">Name</h6>
                                                                     <input class="text-muted f-w-400 inputEdit" name="name" value="{{Auth()->user()->name}}" />
@@ -143,6 +149,10 @@
                                                                           <br>
                                                                           <br/>
                                                                           <span class="text_editProfile"> Address <span style="color:white ">..</span></span><input name="address" value="{{Auth()->user()->address}}" />
+                                                                          <br>
+                                                                          <br>
+                                                                          <span class="text_editProfile"> Image <span style="color:white ">..</span></span><input type="file" name="image" value="{{Auth()->user()->User_image}}" />
+                                                                          <br>
                                                                           <div >
                                                                             <br/>
                                                                           <button type="submit" class="btn button_save">Save</button>

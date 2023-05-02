@@ -61,7 +61,8 @@
                                 class="avatar avatar-xs pull-up"
                                 title="Lilian Fuller"
                               >
-                                <img src="{{URL::asset("storage/Images/$gym->Image")}} alt="Avatar" class="rounded-circle" />
+                                {{-- <img src="{{URL::asset("storage/Images/$gym->Image")}} alt="Avatar" class="rounded-circle" /> --}}
+                                <img src="{{URL::asset("storage/Images/$gym->Image")}}" alt="Avatar" class="rounded-circle" />
                               </li>
                             </ul>
                           </td>

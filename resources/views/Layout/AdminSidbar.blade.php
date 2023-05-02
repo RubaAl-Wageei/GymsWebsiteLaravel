@@ -167,6 +167,23 @@
                   <div data-i18n="Analytics">Personal Trainers Services</div>
                 </a>
               </li>
+
+
+              <li class="menu-header small text-uppercase">
+                <span class="menu-header-text">Reservations</span>
+              </li>
+              <li class="menu-item @yield('')">
+                <a href="GymReservation" class="menu-link">
+                  <i class='menu-icon bx bx-dumbbell'></i>
+                  <div data-i18n="Analytics">Gym Reservations</div>
+                </a>
+              </li>
+              <li class="menu-item @yield('')">
+                <a href="" class="menu-link">
+                    <i class='menu-icon bx bx-group'></i>
+                  <div data-i18n="Analytics">Personal Trainer Reservations</div>
+                </a>
+              </li>
               {{-- <li class="menu-item">
                 <a href="javascript:void(0);" class="menu-link menu-toggle">
                   <i class="menu-icon tf-icons bx bx-dock-top"></i>

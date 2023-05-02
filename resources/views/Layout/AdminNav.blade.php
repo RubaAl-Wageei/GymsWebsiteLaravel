@@ -43,7 +43,12 @@
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
                   <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                      <img src="../assets/img/avatars/UserDefaultImage.png" alt class="w-px-40 h-auto rounded-circle" />
+                      {{-- <img src="../assets/img/avatars/UserDefaultImage.png" alt class="w-px-40 h-auto rounded-circle" /> --}}
+                      @if (auth()->check() && auth()->user()->User_image == NULL)
+                      <img src="../assets/img/avatars/UserDefaultImage.png" class="img-radius" alt="User-Profile-Image" width="60px" >
+                      @else
+                      <img src="{{ asset('storage/Images/' . Auth::user()->User_image)}}" class="img-radius image_profile" alt="User Image">
+                      @endif
                     </div>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
@@ -52,7 +57,7 @@
                         <div class="d-flex">
                           <div class="flex-shrink-0 me-3">
                             <div class="avatar avatar-online">
-                              <img src="{{Auth()->user()->image}}" alt class="w-px-40 h-auto rounded-circle" />
+                              <img src="{{ asset('storage/Images/' . Auth::user()->User_image)}}" alt class="w-px-40 h-auto rounded-circle" />
                             </div>
                           </div>
                           <div class="flex-grow-1">

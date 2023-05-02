@@ -54,7 +54,7 @@
 
 
                       <tr>
-                        <td>{{$TrainerService->TainerId}}</td>
+                        <td>{{$TrainerService->TrainerId}}</td>
                         <td>
                             <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
                               <li
@@ -64,7 +64,7 @@
                                 class="avatar avatar-xs pull-up"
                                 title="Lilian Fuller"
                               >
-                                <img src="{{URL::asset("storage/Images/$TrainerService->ServiceImage")}} alt="Avatar" class="rounded-circle" />
+                                <img src="{{URL::asset("storage/Images/$TrainerService->ServiceImage")}}" alt="Avatar" class="rounded-circle" />
                               </li>
                             </ul>
                           </td>

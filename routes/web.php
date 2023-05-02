@@ -8,7 +8,10 @@ use App\Http\Controllers\PersonalTrainerController;
 use App\Http\Controllers\PersonalTrainerServiceController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginAdminController;
+use App\Http\Controllers\ProfileUserController;
+use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\UserController;
+use App\Models\Reservation;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -66,6 +69,8 @@ Route::get('/EditProfile', function () {
     return view('Website.EditProfile');
 });
 
+Route::resource('/UserProfile' , ProfileUserController::class);
+
 
 
 
@@ -101,6 +106,8 @@ Route::middleware(['Admin'])->group(function(){
     Route::resource('/TrainerServices' , PersonalTrainerServiceController::class);
 
     Route::resource('/Contact' , ContactController::class);
+
+    Route::resource('/GymReservation' , ReservationController::class);
 });
 
 

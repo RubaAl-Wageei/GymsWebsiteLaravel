@@ -95,7 +95,12 @@
                                                             <div class="col-sm-4 bg-c-lite-green user-profile">
                                                                 <div class="card-block text-center text-white">
                                                                     <div class="m-b-25">
-                                                                        <img src="{{Auth()->user()->image}}" class="img-radius" alt="User-Profile-Image">
+                                                                        <img src="{{ asset('storage/Images/' . Auth::user()->User_image)}}" class="img-radius" alt="User-Profile-Image" width="60px">
+                                                                         {{-- @if (auth()->check() && auth()->user()->User_image == NULL)
+                                                                        <img src="../assets/img/avatars/UserDefaultImage.png" class="img-radius" alt="User-Profile-Image" width="60px" >
+                                                                        @else
+                                                                        <img src="{{ asset('storage/Images/' . Auth::user()->User_image)}}" class="img-radius image_profile" alt="User Image">
+                                                                        @endif --}}
                                                                     </div>
                                                                     <h6 class="f-w-600">{{Auth()->user()->name}}</h6>
                                                                     <a style="font-size:30px;color:aliceblue" href="/EditProfile"> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i></a>

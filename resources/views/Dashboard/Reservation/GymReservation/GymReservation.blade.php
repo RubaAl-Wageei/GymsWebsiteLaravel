@@ -1,6 +1,9 @@
 
+
+
+
 @include('Layout.master')
-@section('UsersActive', 'active')
+@section('GymServiceActive', 'active')
 
 
   <body>
@@ -26,32 +29,32 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Tables /</span> Users</h4>
-              {{-- <a href="{{route('user.create')}}"><button type="button" class="btn btn-outline-warning mb-5">New User</button></a> --}}
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Tables /</span> Gym Services</h4>
+              <a href="{{route('GymServices.create')}}"><button type="button" class="btn btn-outline-warning mb-5">New Service</button></a>
 
 
               <!-- Hoverable Table rows -->
               <div class="card">
-                <h5 class="card-header">Users Table</h5>
+                <h5 class="card-header">Gyms Services Table</h5>
                 <div class="table-responsive text-nowrap">
                   <table class="table table-hover">
                     <thead>
                       <tr>
-                        <th>Image</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th>Address</th>
-                        <th>Password</th>
-                        <th>Role</th>
+                        <th>Gym Id</th>
+                        <th>Service Image</th>
+                        <th>Service Name</th>
+                        <th>Service Description</th>
+                        <th>Service Price</th>
+                        <th>Service Time</th>
                         <th>Action</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
-                        @foreach ($users as $user)
+                        @foreach ($GymServices as $GymService)
 
 
                       <tr>
+                        <td>{{$GymService->GymId}}</td>
                         <td>
                             <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
                               <li
@@ -61,23 +64,20 @@
                                 class="avatar avatar-xs pull-up"
                                 title="Lilian Fuller"
                               >
-                                {{-- <img src="{{URL::asset("storage/Images/$user->User_Image")}} alt="Avatar" class="rounded-circle" /> --}}
-                                <img src="{{URL::asset('storage/Images/'.$user->User_image)}}" alt="Avatar" class="rounded-circle"/>
+                                <img src="{{URL::asset("storage/Images/$GymService->ServiceImage")}} alt="Avatar" class="rounded-circle" />
                               </li>
                             </ul>
-                        </td>
+                          </td>
 
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>{{$user->name}}</strong></td>
+                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>{{$GymService->ServiceName}}</strong></td>
 
-                        <td>{{$user->email}}</td>
 
-                        <td>{{$user->phone}}</td>
 
-                        <td>{{$user->address}}</td>
+                        <td>{{$GymService->ServiceDescription}}</td>
 
-                        <td>{{$user->password}}</td>
+                        <td><span class="badge bg-label-info me-1">{{$GymService->ServicePrice}} JD</span></td>
 
-                        <td><span class="badge bg-label-dark me-1">{{$user->Role}}</span></td>
+                        <td><span class="badge bg-label-primary me-1">{{$GymService->ServiceTime}}</span></td>
                         {{-- <td>
                           <div class="dropdown">
                             <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
@@ -111,15 +111,15 @@
                             </form> --}}
 
                             <div>
-                                {{-- <button type="button" class="btn btn-outline-warning mb-3">
-                                    <a  href="{{route('user.edit', $user->id)}}"
+                                <button type="button" class="btn btn-outline-warning mb-3">
+                                    <a  href="{{route('GymServices.edit', $GymService->id)}}"
                                     > Edit</a>
-                                </button> --}}
+                                </button>
 
 
                             </div>
 
-                            <form action="{{Route('user.destroy',$user->id)}}" method="POST" >
+                            <form action="{{Route('GymServices.destroy',$GymService->id)}}" method="POST" >
                                 @method('DELETE')
                                 @csrf
                                 <button type="submit" class="btn btn-outline-danger">Delete</button>
