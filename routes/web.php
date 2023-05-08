@@ -16,6 +16,7 @@ use App\Http\Controllers\GymUserController;
 use App\Http\Controllers\TrainerReservationController;
 use App\Http\Controllers\UserTrainerBookController;
 use App\Http\Controllers\TrainerUserController;
+use App\Http\Controllers\SearchController;
 use App\Models\Reservation;
 use Illuminate\Support\Facades\Route;
 
@@ -84,6 +85,9 @@ Route::get('/GymUser' , [GymUserController::class,'index']);
 
 Route::get('/TrainerUser' , [TrainerUserController::class,'index']);
 
+
+Route::post('/search', [SearchController::class, 'searchGym'])->name('search.searchGym');
+Route::post('/searchTrainer', [SearchController::class, 'searchTrainer'])->name('search.searchTrainer');
 
 
 

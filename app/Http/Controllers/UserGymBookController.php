@@ -70,7 +70,7 @@ class UserGymBookController extends Controller
         ]);
 
         // $code=$request->code;
-        $data = GymService::findOrfail($request->Gym_Services_Id);
+        $data = GymService::findOrFail($request->Gym_Services_Id);
 
         //   $price = $this->sale($data->ServicePrice,$code);
         $price = $data->ServicePrice;

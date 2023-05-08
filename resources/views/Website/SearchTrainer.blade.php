@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +10,7 @@
     <title>OUR GYMS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/6487c144b2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../CSS/Gyms.css">
+    <link rel="stylesheet" href="../CSS/PersonalTrainer.css">
 </head>
 <body>
     <div class="Head">
@@ -21,8 +23,8 @@
             </video> -->
                 <ul>
                     <li><a href="/">HOME</a></li>
-                    <li><a href="/GymUser" style="color:#ffca2cc4;">GYMS</a></li>
-                    <li><a href="/TrainerUser">PERSONAL TRAINERS</a></li>
+                    <li><a href="/GymUser">GYMS</a></li>
+                    <li><a href="/TrainerUser" style="color:#ffca2cc4;">PERSONAL TRAINERS</a></li>
                     {{-- <li><a href="">PRODUCT</a></li> --}}
                     <li><a href="/About">ABOUT</a></li>
                     <li><a href="{{route('Contact.create')}}">CONTACT</a></li>
@@ -51,7 +53,8 @@
                         <i class="fas fa-search"></i>
                     </a>
                 </div> --}}
-                <form action="{{ route('search.searchGym') }}" method="post" >
+
+                <form action="{{ route('search.searchTrainer') }}" method="post" >
                     @csrf
                     <div class="SearchBar">
                         <input class="searchInp" name="search" type="text" placeholder="Search...">
@@ -61,7 +64,7 @@
                     </div>
                 </form>
 
-                <div>
+                <div class="icons">
                     {{-- <a href=""> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <circle cx="12" cy="7" r="4"></circle>
@@ -92,71 +95,70 @@
         </nav>
 
         <div class="Subject">
-            <h2>OUR GYMS</h2>
-            <p>Through our website, we offer the best gyms in Aqaba in terms of services and location</p>
+            <h2>OUR Personal Trainers</h2>
+            <p>Through our website, we offer the best Personal Trainers in Aqaba </p>
             <button>
-                <a href="#OurGyms" >EXPLORE WITH US</a>
+                <a href="#OurPersonaTrainers" >EXPLORE WITH US</a>
             </button>
         </div>
     </div>
 
-        <section id="OurGyms">
+        <section id="OurPersonaTrainers">
             <div class="title">
                 <h2>
-                    Our Gyms
+                    Our PERSONAL TRAINERS
                 </h2>
             </div>
 
             <div class="cards">
 
-                @foreach ($Gyms as $gym)
+                @foreach ($PersonalTrainers as $trainer)
 
                 <div class="card">
-                    <img id="img" src="{{URL::asset('storage/Images/'.$gym->Image)}}" alt="GYM Image" style="width:100%">
-                    <h2>{{$gym->Name}}</h2>
-                    <p class="tittle">{{$gym->Description}}</p>
-                    <p><button> <a href="{{route('UserGymBook.show',$gym->id)}}" >BOOK NOW</a> </button></p>
+                    <img id="img" src="{{URL::asset('storage/Images/'.$trainer->Image)}}" alt="Coach Peter" style="width:100%">
+                    <h2>{{$trainer->Name}}</h2>
+                    <!-- <p class="tittle">information High Fit Gym</p> -->
+                    <p><button> <a href="{{route('UserTrainerBook.show',$trainer->id)}}" >BOOK NOW</a> </button></p>
                 </div>
 
                 @endforeach
 
                 {{-- <div class="card">
-                    <img src="../Images/HittGym.png" alt="HITT GYM" style="width:100%">
-                    <h2>HIT GYM</h2>
-                    <p class="tittle">information Hit Gym</p>
+                    <img src="../Images/CoachJilan.jpg" alt="Coach Jilan" style="width:100%">
+                    <h2>COACH JILAN</h2>
+                    <!-- <p class="tittle">information Hit Gym</p> -->
                     <p><button> <a href="" >BOOK NOW</a> </button></p>
                 </div>
 
                 <div class="card">
-                    <img id="img" src="../Images/HydrogenGym.png" alt="HYDROGEN GYM" style="width:100%">
-                    <h2>HYDROGEN GYM</h2>
-                    <p class="tittle">information Hydrogen Gym</p>
+                    <img id="img" src="../Images/CoachNourseen.jpg" alt="Coach Nourseen" style="width:100%">
+                    <h2>COACH NOURSEEN</h2>
+                    <!-- <p class="tittle">information Hydrogen Gym</p> -->
                     <p><button> <a href="" >BOOK NOW</a> </button></p>
                 </div>
 
                 <div class="card">
-                    <img id="img" src="../Images/LifetimeGym.png" alt="LIFETIME GYM" style="width:100%">
-                    <h2>LIFETIME GYM</h2>
-                    <p class="tittle">information LifeTime Gym</p>
+                    <img id="img" src="../Images/CoachMicheal.jpg" alt="Coach Micheal" style="width:100%">
+                    <h2>COACH MICHEAL</h2>
+                    <!-- <p class="tittle">information LifeTime Gym</p> -->
                     <p><button> <a href="" >BOOK NOW</a> </button></p>
                 </div>
 
                 <div class="card">
-                    <img src="../Images/PowerHutGym.png" alt="POWERHUT GYM" style="width:100%">
-                    <h2>POWERHUT GYM</h2>
-                    <p class="tittle">information PowerHut Gym</p>
+                    <img src="../Images/CoachLilian.jpg" alt="Coach Lilian" style="width:100%">
+                    <h2>COACH LILIAN</h2>
+                    <!-- <p class="tittle">information PowerHut Gym</p> -->
                     <p><button> <a href="" >BOOK NOW</a> </button></p>
                 </div>
 
                 <div class="card">
-                    <img src="../Images/GoldenGym.png" alt="GOLDEN GYM" style="width:100%">
-                    <h2>GOLDEN GYM</h2>
-                    <p class="tittle">information Golden Gym</p>
+                    <img src="../Images/CoachAyman.jpg" alt="Coach Ayman" style="width:100%">
+                    <h2>COACH AYMAN</h2>
+                    <!-- <p class="tittle">information Golden Gym</p> -->
                     <p><button> <a href="" >BOOK NOW</a> </button></p>
                 </div> --}}
 
             </div>
         </section>
-
 
         @include('Layout.footer')

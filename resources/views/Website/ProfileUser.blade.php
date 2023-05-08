@@ -22,7 +22,6 @@
 
     <div class="Head">
         <nav class="navFlex">
-
             <img class="Logo" src="../Images/Logo.png">
             <ul>
                 <li><a href="/">HOME</a></li>
@@ -34,22 +33,16 @@
                 @if (!Auth::user())
                     <li><a href="/Register">REGISTER</a></li>
                    <li><a href="/Login">LOGIN</a></li>
-
                    @else
                    @if (auth()->user()->Role!='User')
                    <li><a href="/ProfileUser" style="color:#ffca2cc4;" >PROFILE</a></li>
                    <li><a href="/Admin" target="_blank">DASHBOARD</a></li>
                    <li><a href="{{route('logout')}}">LOGOUT</a></li>
-
                    @else
-
                    <li><a href="/ProfileUser" style="color:#ffca2cc4;" >PROFILE</a></li>
                    <li><a href="{{route('logout')}}">LOGOUT</a></li>
-
                    @endif
                    @endif
-                <!-- <li><a href="">REGISTER</a></li> -->
-                {{-- <li><a href="/Login" >LOGIN</a></li> --}}
             </ul>
                 {{-- search icon in nav bar --}}
                  <div class="SearchBar">
@@ -60,19 +53,6 @@
                 </div>
                    {{--  start icon for navbar --}}
                 <div class="icons">
-                    {{-- <a href=""> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
-                    </svg> </a>
-
-                    <a href=""> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <circle cx="6" cy="19" r="2"></circle>
-                        <circle cx="17" cy="19" r="2"></circle>
-                        <path d="M17 17h-11v-14h-2"></path>
-                        <path d="M6 5l14 1l-1 7h-13"></path>
-                    </svg> </a> --}}
                     <a href=""> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <circle cx="12" cy="12" r="9"></circle>
@@ -85,66 +65,161 @@
                    {{--  end icon for navbar --}}
 
         </nav>
-    {{-- just to read information  --}}
-    <div class="page-content page-container" id="page-content">
-        <div class="padding">
-            <div class="row container d-flex justify-content-center">
-                    <div class="col-xl-6 col-md-12">
-                                                    <div class="card user-card-full">
-                                                        <div class="row m-l-0 m-r-0">
-                                                            <div class="col-sm-4 bg-c-lite-green user-profile">
-                                                                <div class="card-block text-center text-white">
-                                                                    <div class="m-b-25">
-                                                                        <img src="{{ asset('storage/Images/' . Auth::user()->User_image)}}" class="img-radius" alt="User-Profile-Image" width="60px">
-                                                                         {{-- @if (auth()->check() && auth()->user()->User_image == NULL)
-                                                                        <img src="../assets/img/avatars/UserDefaultImage.png" class="img-radius" alt="User-Profile-Image" width="60px" >
-                                                                        @else
-                                                                        <img src="{{ asset('storage/Images/' . Auth::user()->User_image)}}" class="img-radius image_profile" alt="User Image">
-                                                                        @endif --}}
-                                                                    </div>
-                                                                    <h6 class="f-w-600">{{Auth()->user()->name}}</h6>
-                                                                    <a style="font-size:30px;color:aliceblue" href="/EditProfile"> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i></a>
-                                                                  </div>
-                                                            </div>
-                                                            <div class="col-sm-8">
-                                                                <div class="card-block">
-                                                                    <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>
-                                                                    <div class="row">
-                                                                        <div class="col-sm-6">
-                                                                            <p class="m-b-10 f-w-600">Email</p>
-                                                                            <h6 class="text-muted f-w-400">{{Auth()->user()->email}}</h6>
-                                                                        </div>
-                                                                        <div class="col-sm-6">
-                                                                            <p class="m-b-10 f-w-600">Password</p>
-                                                                            <h6 class="text-muted f-w-400">{{Auth()->user()->password}}</h6>
-                                                                        </div>
+        {{-- just to read information  --}}
+        <div class="page-content page-container" id="page-content">
+            <div class="padding">
+                <div class="row container d-flex justify-content-center">
+                        <div class="col-xl-6 col-md-12">
+                            <div class="card user-card-full">
+                                <div class="row m-l-0 m-r-0">
+                                    <div class="col-sm-4 bg-c-lite-green user-profile">
+                                        <div class="card-block text-center text-white">
+                                            <div class="m-b-25">
+                                                <img src="{{ asset('storage/Images/' . Auth::user()->User_image)}}" class="img-radius" alt="User-Profile-Image" width="60px">
+                                            </div>
+                                            <h6 class="f-w-600">{{Auth()->user()->name}}</h6>
+                                            <a style="font-size:30px;color:aliceblue" href="/EditProfile"> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="card-block">
+                                            <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p class="m-b-10 f-w-600">Email</p>
+                                                    <h6 class="text-muted f-w-400">{{Auth()->user()->email}}</h6>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="m-b-10 f-w-600">Password</p>
+                                                    <h6 class="text-muted f-w-400">{{Auth()->user()->password}}</h6>
+                                                </div>
+                                            </div>
+                                            <br/>
+                                            <br/>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p class="m-b-10 f-w-600">Phone</p>
+                                                    <h6 class="text-muted f-w-400">{{Auth()->user()->phone}}</h6>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="m-b-10 f-w-600">Address</p>
+                                                    <h6 class="text-muted f-w-400">{{Auth()->user()->address}}</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                                                    </div>
-                                                                    <br/>
-                                                                    <br/>
-                                                                    <div class="row">
-                                                                        <div class="col-sm-6">
-                                                                            <p class="m-b-10 f-w-600">Phone</p>
-                                                                            <h6 class="text-muted f-w-400">{{Auth()->user()->phone}}</h6>
-                                                                        </div>
-                                                                        <div class="col-sm-6">
-                                                                          <p class="m-b-10 f-w-600">Address</p>
-                                                                          <h6 class="text-muted f-w-400">{{Auth()->user()->address}}</h6>
-                                                                      </div>
 
-                                                                    </div>
 
-                                                                </div>
-                                                            </div>
+
+
+
+
+
+
+
+                                <div class="card-body">
+                                    <form>
+                                    <h6 class="heading-small text-muted mb-4">Booking Information</h6>
+
+                                    <hr class="my-4">
+                                    <!-- Address -->
+                                    <div class="pl-lg-4">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group focused">
+                                                    @foreach ($reservations as $res)
+                                                    {{-- {{dd($res)}}; --}}
+                                                    <div id="input-address" class="form-control form-control-alternative">
+                                                        <div class="test">
+                                                            <p> your resrvation At <strong>{{$res->GymName}}</strong> is </p>
+                                                            @if ($res->status == 'Pending')
+                                                            <button class="Waiting">Pending</button>
+                                                            @elseif ($res->status == 'Rejected')
+                                                            <button class="NotAprove"> Rejected</button>
+                                                            @elseif ($res->status == 'Accepted')
+                                                            <button class="Aprove">Accepted</button>
+                                                            @endif
                                                         </div>
                                                     </div>
+                                                    @endforeach
+
+                                                    @foreach ($TrainerReservation as $res2)
+                                                    {{-- {{dd($res2)}}; --}}
+                                                    <div id="input-address" class="form-control form-control-alternative">
+                                                        <div class="test">
+                                                            <p> your resrvation At <strong>{{$res2->TrainerName}}</strong> is </p>
+                                                            @if ($res2->status == 'Pending')
+                                                            <button class="Waiting">Pending</button>
+                                                            @elseif ($res2->status == 'Rejected')
+                                                            <button class="NotAprove"> Rejected</button>
+                                                            @elseif ($res2->status == 'Accepted')
+                                                            <button class="Aprove">Accepted</button>
+                                                            @endif
+                                                        </div>
+                                                    </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </form>
+                                </div>
+
+
+                      </div>
                     </div>
-            </div>
-        </div>
+                  </div>
+                </div>
+              </div>
     </div>
 
 
-    {{-- </div> --}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
 
 <!-- Footer -->
 @include('Layout.footer')

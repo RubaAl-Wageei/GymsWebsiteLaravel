@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Reservation;
+use App\Models\TrainerReservation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -46,6 +48,11 @@ class ProfileUserController extends Controller
      */
     public function show($id)
     {
+
+        $reservations = Reservation::where('UserId', $id)->get();
+        $TrainerReservation = TrainerReservation::where('UserId', $id)->get();
+
+    return view('Website.ProfileUser', compact('reservations','TrainerReservation'));
 
     }
 

@@ -27,13 +27,13 @@
 
                    @else
                    @if (auth()->user()->Role!='User')
-                   <li><a href="/ProfileUser">PROFILE</a></li>
+                   <li><a href="{{ route('UserProfile.show', auth()->user()->id)}}">PROFILE</a></li>
                    <li><a href="/Admin" target="_blank">DASHBOARD</a></li>
                    <li><a href="{{route('logout')}}">LOGOUT</a></li>
 
                    @else
 
-                   <li><a href="/ProfileUser">PROFILE</a></li>
+                   <li><a href="{{ route('UserProfile.show', auth()->user()->id)}}">PROFILE</a></li>
                    <li><a href="{{route('logout')}}">LOGOUT</a></li>
 
                    @endif
