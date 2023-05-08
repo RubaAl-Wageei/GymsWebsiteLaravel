@@ -35,7 +35,7 @@
 				<div class="row">
 					<div class="col-md-4">
 						<div class="booking-cta">
-							<h1>Enjoy The Best Booking  At {{$PersonalTrainer->Name}} For Home Services</h1>
+							<h1>Enjoy The Best Booking  At {{$PersonalTrainer->Name}} For Personal Trainer</h1>
 
                            {{-- {{dd($services)}}; --}}
                            {{-- {{dd($salon->name)}};  --}}

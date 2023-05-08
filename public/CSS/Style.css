@@ -26,7 +26,7 @@
 .btnSubmit
 {
 	margin-left: 70%;
-	background-color: #BF839F !important;
+	background-color: #ffca2cc4 !important;
 }
 .booking-form {
 	position: relative;
@@ -116,7 +116,7 @@
 	line-height: 24px;
 	height: 24px;
 	font-size: 12px;
-	color: #BF839F;
+	color: #ffca2cc4;
 	/* color: #4fa3e3; */
 }
 
@@ -176,7 +176,7 @@
 
 .booking-form .submit-btn {
 	color: #fff;
-	background-color: #ad5151;
+	background-color: #ff6a5b;
 	/* background-color: #4fa3e3; */
 	font-weight: 400;
 	height: 65px;
@@ -194,7 +194,7 @@
 	margin-left: 20px;
 	border:1px solid  #bcc6cb;
 	border-radius: 5%;
-	background-color: #BF839F;
+	background-color: #ffca2cc4;
 	/* box-shadow: 0px 0px 15px 2px white; */
 	box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.3);
 	/* opacity: 40%; */
@@ -210,7 +210,7 @@
 .booking-cta h1 {
 	font-size: 45px;
 	text-transform:capitalize;
-	color: #0b1f2d;
+	color: white;
 	/* color: #BF839F; */
 	/* color: #4fa3e3; */
 	font-weight:bold;
