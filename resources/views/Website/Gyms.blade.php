@@ -21,11 +21,11 @@
             </video> -->
                 <ul>
                     <li><a href="/">HOME</a></li>
-                    <li><a href="/Gyms" style="color:#ffca2cc4;">GYMS</a></li>
-                    <li><a href="/PersonalTrainers">PERSONAL TRAINERS</a></li>
+                    <li><a href="/GymUser" style="color:#ffca2cc4;">GYMS</a></li>
+                    <li><a href="/TrainerUser">PERSONAL TRAINERS</a></li>
                     {{-- <li><a href="">PRODUCT</a></li> --}}
                     <li><a href="/About">ABOUT</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="{{route('Contact.create')}}">CONTACT</a></li>
                     @if (!Auth::user())
                     <li><a href="/Register">REGISTER</a></li>
                    <li><a href="/Login">LOGIN</a></li>

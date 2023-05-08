@@ -13,8 +13,8 @@
                 <img class="Logo" src="../Images/Logo.png">
                     <ul>
                         <li><a href="/" >HOME</a></li>
-                    <li><a href="/Gyms">GYMS</a></li>
-                    <li><a href="/PersonalTrainers">PERSONAL TRAINERS</a></li>
+                    <li><a href="/GymUser">GYMS</a></li>
+                    <li><a href="/TrainerUser">PERSONAL TRAINERS</a></li>
                     {{-- <li><a href="">PRODUCT</a></li> --}}
                     <li><a href="/About" style="color:#ffca2cc4;">ABOUT</a></li>
                     <li><a href="{{route('Contact.create')}}">CONTACT</a></li>
