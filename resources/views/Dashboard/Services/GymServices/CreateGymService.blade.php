@@ -55,6 +55,7 @@
                                 aria-label="Gym Id"
                                 aria-describedby="basic-icon-default-fullname2"
                                 name="Gym_id"
+                                {{-- value="{{$GymService->GymId}}" --}}
                               />
                             </div>
                           </div>

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Reservation;
+use App\Models\TrainerReservation;
 use Illuminate\Http\Request;
 
-class ReservationController extends Controller
+class TrainerReservationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,8 @@ class ReservationController extends Controller
      */
     public function index()
     {
-        $reservations = Reservation::all();
+        //
+        $reservations = TrainerReservation::all();
 
         $data = [];
 
@@ -27,14 +28,15 @@ class ReservationController extends Controller
                 'comment' => $reservation->comment,
                 'res_date' => $reservation->res_date,
                 'status' => $reservation->status,
-                'GymName' => $reservation->SalonName,
+                'TrainerName' => $reservation->HomeServicesName,
                 // 'service_name' => isset($reservation->service) ? $reservation->service->name : "",
-                'GymServiceId' => isset($reservation->service) ? $reservation->service->id : "",
+                'TrainerServiceId' => isset($reservation->service) ? $reservation->service->id : "",
 
 
             ];
         }
-        return view('Dashboard.Reservation.GymReservation.GymReservation',compact('reservations'));
+        return view('Dashboard.Reservation.TrainerReservation.TrainerReservation',compact('reservations'));
+
     }
 
     /**
@@ -61,10 +63,10 @@ class ReservationController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Reservation  $reservation
+     * @param  \App\Models\TrainerReservation  $trainerReservation
      * @return \Illuminate\Http\Response
      */
-    public function show(Reservation $reservation)
+    public function show(TrainerReservation $trainerReservation)
     {
         //
     }
@@ -72,25 +74,25 @@ class ReservationController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Reservation  $reservation
+     * @param  \App\Models\TrainerReservation  $trainerReservation
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(TrainerReservation $trainerReservation)
     {
-        // $data = Reservation::findOrfail($id);
-        // return view('Admin.pages.admin.reservationTable.edit', ['data' => $data]);
+        //
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Reservation  $reservation
+     * @param  \App\Models\TrainerReservation  $trainerReservation
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,$id)
     {
-        $data = Reservation::findOrfail($id);
+        //
+        $data = TrainerReservation::findOrFail($id);
 
         $data->status = $request->status;
 
@@ -98,17 +100,21 @@ class ReservationController extends Controller
         //-------------------------------
         // return view('admin.Reservation.homeReservation.index',compact('reservations'));
 
-        return redirect('GymReservation');
+        // return redirect('/HomeServicesReservation');
+        return redirect('TrainerReservation');
+
+
 
     }
+
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Reservation  $reservation
+     * @param  \App\Models\TrainerReservation  $trainerReservation
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Reservation $reservation)
+    public function destroy(TrainerReservation $trainerReservation)
     {
-//
-}
+        //
+    }
 }

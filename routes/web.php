@@ -11,6 +11,11 @@ use App\Http\Controllers\LoginAdminController;
 use App\Http\Controllers\ProfileUserController;
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\UserGymBookController;
+use App\Http\Controllers\GymUserController;
+use App\Http\Controllers\TrainerReservationController;
+use App\Http\Controllers\UserTrainerBookController;
+use App\Http\Controllers\TrainerUserController;
 use App\Models\Reservation;
 use Illuminate\Support\Facades\Route;
 
@@ -71,6 +76,16 @@ Route::get('/EditProfile', function () {
 
 Route::resource('/UserProfile' , ProfileUserController::class);
 
+Route::resource('/UserGymBook',UserGymBookController::class);
+
+Route::resource('/UserTrainerBook',UserTrainerBookController::class);
+
+Route::get('/GymUser' , [GymUserController::class,'index']);
+
+Route::get('/TrainerUser' , [TrainerUserController::class,'index']);
+
+
+
 
 
 
@@ -108,6 +123,8 @@ Route::middleware(['Admin'])->group(function(){
     Route::resource('/Contact' , ContactController::class);
 
     Route::resource('/GymReservation' , ReservationController::class);
+
+    Route::resource('/TrainerReservation' , TrainerReservationController::class);
 });
 
 
@@ -137,5 +154,11 @@ Route::controller(RegisterController::class)->group(function(){
 // });
 
 
+Route::get('/form', function () {
+    return view('index');
+});
 
+Route::get('/nav', function () {
+    return view('Nav');
+});
 

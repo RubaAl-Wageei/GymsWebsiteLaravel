@@ -50,7 +50,7 @@ class PersonalTrainerController extends Controller
         $trainer->Phone = $request->phone;
         $trainer->Description = $request->description;
         $trainer->WorkHour = $request->work_hours;
-        $trainer->Image= $trainer_img;
+        $trainer->Image = $trainer_img;
         $trainer->save();
         return redirect('Trainers');
     }

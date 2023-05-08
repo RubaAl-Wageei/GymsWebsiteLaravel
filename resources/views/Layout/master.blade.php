@@ -56,6 +56,9 @@
 
     <!-- Page CSS -->
 
+
+    <script src="https://kit.fontawesome.com/6487c144b2.js" crossorigin="anonymous"></script>
+    
     <!-- Helpers -->
     <script src="../assets/vendor/js/helpers.js"></script>
 

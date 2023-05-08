@@ -100,14 +100,18 @@
 
             <div class="cards">
 
-                <div class="card">
-                    <img id="img" src="../Images/CoachPeter.jpg" alt="Coach Peter" style="width:100%">
-                    <h2>COACH PETER</h2>
-                    <!-- <p class="tittle">information High Fit Gym</p> -->
-                    <p><button> <a href="" >BOOK NOW</a> </button></p>
-                </div>
+                @foreach ($Trainers as $trainer)
 
                 <div class="card">
+                    <img id="img" src="{{URL::asset('storage/Images/'.$trainer->Image)}}" alt="Coach Peter" style="width:100%">
+                    <h2>{{$trainer->Name}}</h2>
+                    <!-- <p class="tittle">information High Fit Gym</p> -->
+                    <p><button> <a href="{{route('UserTrainerBook.show',$trainer->id)}}" >BOOK NOW</a> </button></p>
+                </div>
+
+                @endforeach
+
+                {{-- <div class="card">
                     <img src="../Images/CoachJilan.jpg" alt="Coach Jilan" style="width:100%">
                     <h2>COACH JILAN</h2>
                     <!-- <p class="tittle">information Hit Gym</p> -->
@@ -140,7 +144,7 @@
                     <h2>COACH AYMAN</h2>
                     <!-- <p class="tittle">information Golden Gym</p> -->
                     <p><button> <a href="" >BOOK NOW</a> </button></p>
-                </div>
+                </div> --}}
 
             </div>
         </section>

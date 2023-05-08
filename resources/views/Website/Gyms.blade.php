@@ -100,14 +100,18 @@
 
             <div class="cards">
 
-                <div class="card">
-                    <img id="img" src="../Images/HighFitGym.png" alt="HIGH FIT GYM" style="width:100%">
-                    <h2>HIGHT FIT GYM</h2>
-                    <p class="tittle">information High Fit Gym</p>
-                    <p><button> <a href="" >BOOK NOW</a> </button></p>
-                </div>
+                @foreach ($Gyms as $gym)
 
                 <div class="card">
+                    <img id="img" src="{{URL::asset('storage/Images/'.$gym->Image)}}" alt="GYM Image" style="width:100%">
+                    <h2>{{$gym->Name}}</h2>
+                    <p class="tittle">{{$gym->Description}}</p>
+                    <p><button> <a href="{{route('UserGymBook.show',$gym->id)}}" >BOOK NOW</a> </button></p>
+                </div>
+
+                @endforeach
+
+                {{-- <div class="card">
                     <img src="../Images/HittGym.png" alt="HITT GYM" style="width:100%">
                     <h2>HIT GYM</h2>
                     <p class="tittle">information Hit Gym</p>
@@ -140,7 +144,7 @@
                     <h2>GOLDEN GYM</h2>
                     <p class="tittle">information Golden Gym</p>
                     <p><button> <a href="" >BOOK NOW</a> </button></p>
-                </div>
+                </div> --}}
 
             </div>
         </section>

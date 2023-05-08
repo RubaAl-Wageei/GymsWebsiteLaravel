@@ -1,7 +1,9 @@
 
 
+
+
 @include('Layout.master')
-@section('GymReservationActive', 'active')
+@section('PersonalTrainerReservationActive', 'active')
 
 
   <body>
@@ -45,8 +47,8 @@
                         <th>Phone Number</th>
                         <th>Cooment</th>
                         <th>Reservation Date</th>
-                        <th>GymName</th>
-                        <th>GymServiceId</th>
+                        <th>TrainerName</th>
+                        <th>TrainerServiceId</th>
                         <th>Status</th>
                         <th>Action</th>
                       </tr>
@@ -77,8 +79,8 @@
                           <td>{{$value->phoneNumber}} </td>
                           <td>{{$value->comment}} </td>
                           <td>{{$value->res_date}} </td>
-                          <td>{{$value->GymName}} </td>
-                          <td>{{$value->GymServiceId}} </td>
+                          <td>{{$value->TrainerName}} </td>
+                          <td>{{$value->TrainerServiceId}} </td>
 
                           @if ($value->status=="Pending")
                                 <td><label class="badge badge-warning" style="background-color:rgb(213, 213, 27)">Pending</label></td>

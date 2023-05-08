@@ -172,14 +172,14 @@
               <li class="menu-header small text-uppercase">
                 <span class="menu-header-text">Reservations</span>
               </li>
-              <li class="menu-item @yield('')">
+              <li class="menu-item @yield('GymReservationActive')">
                 <a href="GymReservation" class="menu-link">
                   <i class='menu-icon bx bx-dumbbell'></i>
                   <div data-i18n="Analytics">Gym Reservations</div>
                 </a>
               </li>
-              <li class="menu-item @yield('')">
-                <a href="" class="menu-link">
+              <li class="menu-item @yield('PersonalTrainerReservationActive')">
+                <a href="TrainerReservation" class="menu-link">
                     <i class='menu-icon bx bx-group'></i>
                   <div data-i18n="Analytics">Personal Trainer Reservations</div>
                 </a>

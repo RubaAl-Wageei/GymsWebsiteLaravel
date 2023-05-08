@@ -98,7 +98,7 @@
             <p><i class="fas fa-home me-3 text-secondary"></i> Jordan, Aqaba</p>
             <p>
               <i class="fas fa-envelope me-3 text-secondary"></i>
-              Gymaza@gmail.com
+              GogoGym@gmail.com
             </p>
             <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
             <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>

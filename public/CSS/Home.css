@@ -166,3 +166,25 @@ height: 100vh;
 
 
 
+/* /////////////////////////////// */
+
+.navbar{
+    display: none;
+}
+
+@media screen and (max-width:1215px ) and (min-width:340px) {
+
+    .Head{
+        display: none;
+    }
+
+    .navbar{
+        display: flex;
+    }
+
+
+}
+
+
+
+

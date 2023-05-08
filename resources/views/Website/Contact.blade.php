@@ -182,7 +182,7 @@
                                                 <h6 class="font-weight-medium">Email</h6>
                                                 <p class="">
                                                     GogoGym@gmail.com
-                                                    <br> GymMaza@gmail.com
+                                                    {{-- <br> GymMaza@gmail.com --}}
                                                 </p>
                                             </div>
                                         </div>

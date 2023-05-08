@@ -13,19 +13,19 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('reservations', function (Blueprint $table) {
+        Schema::create('trainer_reservations', function (Blueprint $table) {
             $table->id();
             $table->string('first_name');
             $table->string('last_name');
+            $table->foreignId('UserId')->constrained('users')->onDelete('cascade');
             $table->integer('phoneNumber');
             $table->string('email');
-            $table->foreignId('UserId')->constrained('users')->onDelete('cascade');
-            $table->foreignId('GymServiceId')->constrained('gym_services')->onDelete('cascade');
-            $table->string('status')->default('Pending');
-            $table->text('comment')->nullable();
+            $table->foreignId('TrainerServiceId')->constrained('personal_trainer_services')->onDelete('cascade');
             $table->date('res_date');
             $table->decimal('price');
-            $table->string('GymName');
+            $table->string('status')->default('Pending');
+            $table->text('comment')->nullable();
+            $table->string('TrainerName');
             $table->string('code')->nullable();
             $table->softDeletes();
             $table->timestamps();
@@ -39,6 +39,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reservations');
+        Schema::dropIfExists('trainer_reservations');
     }
 };
