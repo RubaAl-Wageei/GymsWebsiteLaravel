@@ -108,9 +108,12 @@ class UserTrainerBookController extends Controller
     {
         //
         $PersonalTrainer = PersonalTrainer::find($id);
-        $services = PersonalTrainerService::all();
+        // $services = PersonalTrainerService::all();
+        $services = PersonalTrainerService::where('TrainerId', $id)->get();
         // dd($salon);
         return view('Website.TrainerBook',compact('PersonalTrainer','services'));
+        // dd($salon);
+        // return view('Website.TrainerBook',compact('PersonalTrainer','services'));
 
     }
 

@@ -60,7 +60,7 @@
                 <div class="signup-content">
                     <form action="{{route('register')}}" method="POST" enctype="multipart/form-data" id="signup-form" class="signup-form">
                         @csrf
-                        <img class="Logo" src="../Images/Logo.png" alt="">
+                        <img class="Logo" src="../Images/LogoDash.png" alt="">
                         <h2 class="form-title">Create account</h2>
                         <div class="form-group">
                             <input type="text" class="form-input" name="name" id="name" placeholder="Your Name" class="@error('name') is-invalid @enderror" value="{{ old('name')}}"/>

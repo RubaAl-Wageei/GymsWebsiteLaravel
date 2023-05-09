@@ -187,6 +187,74 @@ button.list-group-item-primary.active {
   background-color: #696cff !important;
 }
 
+.Flex
+{
+  padding: 2%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   flex-wrap:wrap;
+}
+
+.Flex h5{
+    color: white;
+}
+
+.Flex p {
+    text-align: center;
+}
+
+.card {
+    flex-basis: calc(25% - 10px);
+}
+
+.color {
+    /* background-color: #ffca2cc4 !important; */
+    background: #ff6a5b !important;;
+    background: -webkit-linear-gradient(legacy-direction(to right), #50f5d9c4 0%, #ffca2cc4 100%) !important;
+    background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#50f5d9c4)) !important;
+    background: -webkit-linear-gradient(left, #ff6a5b 0%, #ffca2cc4 100%) !important;
+    background: -o-linear-gradient(left, #ffca2cc4 0%, #50f5d9c4 100%) !important;
+    background: linear-gradient(to right, #50f5d9c4 0%, #ffca2cc4 100%) !important;
+}
+.color1 {
+    /* background-color: #ff6a5b !important; */
+    background: #ff6a5b !important;
+    background: -webkit-linear-gradient(legacy-direction(to right), #50f5d9c4 0%, #ffca2cc4 100%) !important;
+    background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#50f5d9c4)) !important;
+    background: -webkit-linear-gradient(left, #ff6a5b 0%, #ffca2cc4 100%) !important;
+    background: -o-linear-gradient(left, #ffca2cc4 0%, #ff6a5b 100%) !important;
+    background: linear-gradient(to right, #ff6a5b 0%, #ffca2cc4 100%) !important;
+}
+.color2 {
+    /* background-color: #50f5d9c4 !important; */
+    background: #ff6a5b !important;
+    background: -webkit-linear-gradient(legacy-direction(to right), #50f5d9c4 0%, #ffca2cc4 100%) !important;
+    background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#50f5d9c4)) !important;
+    background: -webkit-linear-gradient(left, #ff6a5b 0%, #ffca2cc4 100%) !important;
+    background: -o-linear-gradient(left, #ffca2cc4 0%, #50f5d9c4 100%) !important;
+    background: linear-gradient(to right, #50f5d9c4 0%, #ffca2cc4 100%) !important;
+}
+.color3 {
+    /* background-color: #f6d981c4 !important; */
+    background: #e98e86 !important;
+    background: -webkit-linear-gradient(legacy-direction(to right), #50f5d9c4 0%, #ffca2cc4 100%) !important;
+    background: -webkit-gradient(linear, left top, right top, from(#e98e86), to(#50f5d9c4)) !important;
+    background: -webkit-linear-gradient(left, #e98e86 0%, #ffca2cc4 100%) !important;
+    background: -o-linear-gradient(left, #ffca2cc4 0%, #e98e86 100%) !important;
+    background: linear-gradient(to right, #e98e86 0%, #ffca2cc4 100%) !important;
+}
+.color4 {
+    /* background-color: #e98e86 !important; */
+    background: #ff6a5b !important;
+    background: -webkit-linear-gradient(legacy-direction(to right), #50f5d9c4 0%, #ffca2cc4 100%) !important;
+    background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#50f5d9c4)) !important;
+    background: -webkit-linear-gradient(left, #ff6a5b 0%, #ffca2cc4 100%) !important;
+    background: -o-linear-gradient(left, #ffca2cc4 0%, #50f5d9c4 100%) !important;
+    background: linear-gradient(to right, #50f5d9c4 0%, #ffca2cc4 100%) !important;
+}
+
+
 .table-primary {
   --bs-table-bg: #e1e2ff;
   --bs-table-striped-bg: #dcdefb;

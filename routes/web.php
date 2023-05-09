@@ -107,9 +107,9 @@ Route::post('/CheckLogin' , [LoginAdminController::class,'login'])->name('CheckL
 
 Route::middleware(['Admin'])->group(function(){
 
-    // Route::get('/Admin', function () {
-    //     return view('Dashboard.index');
-    // });
+    Route::get('/Admin', function () {
+        return view('Dashboard.index');
+    });
 
     Route::get('/Account', function () {
         return view('Dashboard.ProfileAdmin');

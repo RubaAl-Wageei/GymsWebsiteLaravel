@@ -23,7 +23,7 @@
           <div class="content-wrapper">
             <!-- Content -->
 
-            <div class="container-xxl flex-grow-1 container-p-y">
+            {{-- <div class="container-xxl flex-grow-1 container-p-y">
               <div class="row">
 
                 <div class="col-lg-6 col-md-4 order-1">
@@ -313,8 +313,122 @@
 
 
               </div>
-            </div>
+            </div> --}}
             <!-- / Content -->
+
+
+            <!-- Content 2 -->
+
+            <div class="Flex">
+                <div class="card text-white bg-primary mb-3 color" style="max-width: 18rem;">
+                    <div class="card-header"><i class='bx bx-user'></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Total All User</h5>
+                      <br>
+                      <p class="card-text">{{$totalAllUser}}</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-secondary mb-3 color" style="max-width: 18rem;">
+                    <div class="card-header"><i class='bx bx-user'></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Total User</h5>
+                      <p class="card-text">{{$totalUser}}</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-success mb-3 color" style="max-width: 18rem;">
+                    <div class="card-header"><i class='bx bx-user'></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Total Admin</h5>
+                      <p class="card-text">{{$totalAdmin}}</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-danger mb-3 color1" style="max-width: 18rem;">
+                    <div class="card-header"><i class='bx bx-category-alt'></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Total Category</h5>
+                      <p class="card-text">{{$totalCategory}}</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-warning mb-3 color1" style="max-width: 18rem;">
+                    <div class="card-header"><i class='bx bx-message-square'></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Total Contact</h5>
+                      <p class="card-text">{{$totalContact}}</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-info mb-3 color1" style="max-width: 18rem;">
+                    <div class="card-header"><i class='bx bx-dumbbell' ></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Total Gym</h5>
+                      <p class="card-text">{{$totalGym}}</p>
+                    </div>
+                  </div>
+                  <div class="card bg-light mb-3 color2" style="max-width: 18rem;">
+                    <div class="card-header"><i class='bx bx-dumbbell' ></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Total Gym Service</h5>
+                      <p class="card-text">{{$totalGymService}}</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-dark mb-3 color2" style="max-width: 18rem;">
+                    <div class="card-header"><i class='bx bx-group'></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Total Personal Trainer</h5>
+                      <p class="card-text">{{$totalTrainer}}</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-dark mb-3 color2" style="max-width: 18rem;">
+                    <div class="card-header"><i class='bx bx-group'></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Total Personal Trainer Service</h5>
+                      <p class="card-text">{{$totalTrainerService}}</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-dark mb-3 color3" style="max-width: 18rem;">
+                    <div class="card-header"><i class='bx bx-dumbbell'></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Total Gym Reservation</h5>
+                      <p class="card-text">{{$totalGymReservation}}</p>
+                    </div>
+                  </div>
+                  {{-- <div class="card text-white bg-dark mb-3 color3" style="max-width: 18rem;">
+                    <div class="card-header"><i class='bx bx-dumbbell'></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Today Gym Reservation</h5>
+                      <p class="card-text">{{$todayGymReservation}}</p>
+                    </div>
+                  </div> --}}
+                  <div class="card text-white bg-dark mb-3 color3" style="max-width: 18rem;">
+                    <div class="card-header"><i class='bx bx-dumbbell'></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">This Month Gym Reservation</h5>
+                      <p class="card-text">{{$thisMonthGymReservation}}</p>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-dark mb-3 color4" style="max-width: 18rem;">
+                    <div class="card-header"><i class='bx bx-group'></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Total Trainer Reservation</h5>
+                      <p class="card-text">{{$totalTrainerReservation}}</p>
+                    </div>
+                  </div>
+                  {{-- <div class="card text-white bg-dark mb-3 color4" style="max-width: 18rem;">
+                    <div class="card-header"><i class='bx bx-group'></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Today Trainer Reservation </h5>
+                      <p class="card-text">{{$todayTrainerReservation}}</p>
+                    </div>
+                  </div> --}}
+                  <div class="card text-white bg-dark mb-3 color4" style="max-width: 18rem;">
+                    <div class="card-header"><i class='bx bx-group'></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">This Month Trainer Reservation</h5>
+                      <p class="card-text">{{$thisMonthTrainerReservation}}</p>
+                    </div>
+                  </div>
+            </div>
+
+            <!-- /Content 2 -->
 
             <!-- Footer -->
             @include('Layout.AdminFooter')

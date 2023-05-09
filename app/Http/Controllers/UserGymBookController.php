@@ -106,9 +106,12 @@ class UserGymBookController extends Controller
 
 
         $gym = Gym::find($id);
-        $services = GymService::all();
+        // $services = GymService::all();
+        $services = GymService::where('GymId', $id)->get();
         // dd($salon);
         return view('Website.GymBook',compact('gym','services'));
+        // dd($salon);
+        // return view('Website.GymBook',compact('gym','services'));
     }
 
     /**

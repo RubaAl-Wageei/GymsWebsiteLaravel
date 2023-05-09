@@ -22,7 +22,7 @@
 
     <div class="Head">
         <nav class="navFlex">
-            <img class="Logo" src="../Images/Logo.png">
+            <img class="Logo" src="../Images/LOGOO.png">
             <ul>
                 <li><a href="/">HOME</a></li>
                 <li><a href="/GymUser">GYMS</a></li>
@@ -36,7 +36,7 @@
                    @else
                    @if (auth()->user()->Role!='User')
                    <li><a href="/ProfileUser" style="color:#ffca2cc4;" >PROFILE</a></li>
-                   <li><a href="/Admin" target="_blank">DASHBOARD</a></li>
+                   <li><a href="/HomeDashboard" target="_blank">DASHBOARD</a></li>
                    <li><a href="{{route('logout')}}">LOGOUT</a></li>
                    @else
                    <li><a href="/ProfileUser" style="color:#ffca2cc4;" >PROFILE</a></li>
