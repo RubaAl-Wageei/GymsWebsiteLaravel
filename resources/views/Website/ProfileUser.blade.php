@@ -35,11 +35,11 @@
                    <li><a href="/Login">LOGIN</a></li>
                    @else
                    @if (auth()->user()->Role!='User')
-                   <li><a href="/ProfileUser" style="color:#ffca2cc4;" >PROFILE</a></li>
+                   <li><a href="{{ route('UserProfile.show', auth()->user()->id)}}" style="color:#ffca2cc4;" >PROFILE</a></li>
                    <li><a href="/HomeDashboard" target="_blank">DASHBOARD</a></li>
                    <li><a href="{{route('logout')}}">LOGOUT</a></li>
                    @else
-                   <li><a href="/ProfileUser" style="color:#ffca2cc4;" >PROFILE</a></li>
+                   <li><a href="{{ route('UserProfile.show', auth()->user()->id)}}" style="color:#ffca2cc4;" >PROFILE</a></li>
                    <li><a href="{{route('logout')}}">LOGOUT</a></li>
                    @endif
                    @endif
@@ -127,7 +127,6 @@
                                             <div class="col-md-12">
                                                 <div class="form-group focused">
                                                     @foreach ($reservations as $res)
-                                                    {{-- {{dd($res)}}; --}}
                                                     <div id="input-address" class="form-control form-control-alternative">
                                                         <div class="test">
                                                             <p> your resrvation At <strong>{{$res->GymName}}</strong> is </p>
