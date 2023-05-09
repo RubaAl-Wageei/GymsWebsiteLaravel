@@ -65,62 +65,59 @@
                    {{--  end icon for navbar --}}
 
         </nav>
+
+    </div>
+
+
+    <section>
+
         {{-- just to read information  --}}
         <div class="page-content page-container" id="page-content">
             <div class="padding">
                 <div class="row container d-flex justify-content-center">
-                        <div class="col-xl-6 col-md-12">
-                            <div class="card user-card-full">
-                                <div class="row m-l-0 m-r-0">
-                                    <div class="col-sm-4 bg-c-lite-green user-profile">
-                                        <div class="card-block text-center text-white">
-                                            <div class="m-b-25">
-                                                <img src="{{ asset('storage/Images/' . Auth::user()->User_image)}}" class="img-radius" alt="User-Profile-Image" width="60px">
-                                            </div>
-                                            <h6 class="f-w-600">{{Auth()->user()->name}}</h6>
-                                            <a style="font-size:30px;color:aliceblue" href="/EditProfile"> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i></a>
+                    <div class="col-xl-6 col-md-12">
+                        <div class="card user-card-full">
+                            <div class="row m-l-0 m-r-0">
+                                <div class="col-sm-4 bg-c-lite-green user-profile">
+                                    <div class="card-block text-center text-white">
+                                        <div class="m-b-25">
+                                            <img src="{{ asset('storage/Images/' . Auth::user()->User_image)}}" class="img-radius" alt="User-Profile-Image" width="60px">
                                         </div>
+                                        <h6 class="f-w-600">{{Auth()->user()->name}}</h6>
+                                        <a style="font-size:30px;color:aliceblue" href="/EditProfile"> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i></a>
                                     </div>
-                                    <div class="col-sm-8">
-                                        <div class="card-block">
-                                            <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <p class="m-b-10 f-w-600">Email</p>
-                                                    <h6 class="text-muted f-w-400">{{Auth()->user()->email}}</h6>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <p class="m-b-10 f-w-600">Password</p>
-                                                    <h6 class="text-muted f-w-400">{{Auth()->user()->password}}</h6>
-                                                </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="card-block">
+                                        <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <p class="m-b-10 f-w-600">Email</p>
+                                                <h6 class="text-muted f-w-400">{{Auth()->user()->email}}</h6>
                                             </div>
-                                            <br/>
-                                            <br/>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <p class="m-b-10 f-w-600">Phone</p>
-                                                    <h6 class="text-muted f-w-400">{{Auth()->user()->phone}}</h6>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <p class="m-b-10 f-w-600">Address</p>
-                                                    <h6 class="text-muted f-w-400">{{Auth()->user()->address}}</h6>
-                                                </div>
+                                            <div class="col-sm-6">
+                                                <p class="m-b-10 f-w-600">Password</p>
+                                                <h6 class="text-muted f-w-400">{{Auth()->user()->password}}</h6>
+                                            </div>
+                                        </div>
+                                        <br/>
+                                        <br/>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <p class="m-b-10 f-w-600">Phone</p>
+                                                <h6 class="text-muted f-w-400">{{Auth()->user()->phone}}</h6>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p class="m-b-10 f-w-600">Address</p>
+                                                <h6 class="text-muted f-w-400">{{Auth()->user()->address}}</h6>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-
-
-
-
-
-
-
-
-
-                                <div class="card-body">
-                                    <form>
+                            <div class="card-body">
+                                <form>
                                     <h6 class="heading-small text-muted mb-4">Booking Information</h6>
 
                                     <hr class="my-4">
@@ -164,40 +161,15 @@
                                             </div>
                                         </div>
                                     </div>
-                                    </form>
-                                </div>
-
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                </form>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
 
+    </section>
 
 
 
@@ -218,7 +190,25 @@
 
 
 
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- Footer -->

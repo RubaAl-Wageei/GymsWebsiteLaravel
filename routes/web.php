@@ -17,6 +17,7 @@ use App\Http\Controllers\TrainerReservationController;
 use App\Http\Controllers\UserTrainerBookController;
 use App\Http\Controllers\TrainerUserController;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\HomeController;
 use App\Models\Reservation;
 use Illuminate\Support\Facades\Route;
 
@@ -85,9 +86,11 @@ Route::get('/GymUser' , [GymUserController::class,'index']);
 
 Route::get('/TrainerUser' , [TrainerUserController::class,'index']);
 
-
 Route::post('/search', [SearchController::class, 'searchGym'])->name('search.searchGym');
+
 Route::post('/searchTrainer', [SearchController::class, 'searchTrainer'])->name('search.searchTrainer');
+
+
 
 
 
@@ -104,13 +107,16 @@ Route::post('/CheckLogin' , [LoginAdminController::class,'login'])->name('CheckL
 
 Route::middleware(['Admin'])->group(function(){
 
-    Route::get('/Admin', function () {
-        return view('Dashboard.index');
-    });
+    // Route::get('/Admin', function () {
+    //     return view('Dashboard.index');
+    // });
 
     Route::get('/Account', function () {
         return view('Dashboard.ProfileAdmin');
     });
+
+    // Route::get('/INFO', [App\Http\Controllers\INFO_Dashboard::class, 'index'])->name('INFO');
+    Route::get('/HomeDashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('HomeDashboard');
 
     Route::resource('/user' , UserController::class);
 

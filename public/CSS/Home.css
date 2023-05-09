@@ -92,7 +92,75 @@ nav ul li a:hover{
     color: #ffca2cc4;
 }
 
-.WelcomeContent{
+.title{
+    padding: 20px;
+}
+
+.title h2 {
+    text-align: center;
+    font-size: 60px;
+    color: rgba(255, 193, 6, 0.769);
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding: 80px;
+    }
+
+
+    .card {
+        box-shadow: 0 6px 10px 0 rgba(255, 193, 6, 0.2);
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+        margin-top: 3%;
+        padding: 2%;
+        background-color: white;
+        border-radius: 10px;
+        }
+
+        .card h2 {
+        margin-top: 10px;
+        }
+
+        /* .card img {
+         border-radius: 70px;
+         width: 50%;
+        } */
+
+        /* #img{
+         width: 100%;
+        } */
+
+        .tittle {
+        color: grey;
+        font-size: 18px;
+        }
+
+        p{
+        margin-top: 10px;
+        }
+
+        .btn{
+            color: white;
+        }
+
+        a {
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        }
+
+        button:hover, a:hover {
+        opacity: 0.7;
+        }
+
+/* .WelcomeContent{
     text-align: center;
     font-family: 'Libre Baskerville', serif;
 
@@ -161,18 +229,18 @@ height: 100vh;
         height: 100%;
     }
 
-}
+} */
 
 
 
 
 /* /////////////////////////////// */
 
-.navbar{
+/* .navbar{
     display: none;
-}
+} */
 
-@media screen and (max-width:1215px ) and (min-width:340px) {
+/* @media screen and (max-width:1215px ) and (min-width:340px) {
 
     .Head{
         display: none;
@@ -183,7 +251,60 @@ height: 100vh;
     }
 
 
+} */
+
+
+.Homevid{
+    /* position: absolute; */
+    width: 100%;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    height: 60vh;
+    }
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1123px) {
+    .Head {
+        height: 80vh;
+    }
+
+    .navFlex {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .Logo {
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .SearchBar {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
 }
+
+
+
 
 
 

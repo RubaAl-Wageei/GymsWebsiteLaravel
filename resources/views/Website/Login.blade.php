@@ -58,7 +58,7 @@
                 <div class="signup-content">
                     <form action="{{route('go.login')}}" method="POST" enctype="multipart/form-data" id="signup-form" class="signup-form">
                         @csrf
-                        <img class="Logo" src="../Images/Logo.png" alt="">
+                        <img class="Logo" src="../Images/ResponsiveLogo.png" alt="">
                         <h2 class="form-title">Login An Account</h2>
                         <div class="form-group">
                             <input type="email" class="form-input" name="email" id="email" placeholder="Your Email" class="@error('email') is-invalid @enderror" />

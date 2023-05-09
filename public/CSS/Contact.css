@@ -153,6 +153,40 @@ div>h3
 }
 
 
+
+@media screen and (max-width: 1123px) {
+    .Head {
+        height: 80vh;
+    }
+
+    .navFlex {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .Logo {
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .SearchBar {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+}
+
+
+
+
 /* ///////////////////////// END CSS FOR LANDING PAGE AND NAV BAR////////////////////// */
 
 

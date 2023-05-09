@@ -3,23 +3,15 @@
 .Login,.Home,.Contact,.Events{
     background-color: none;
 }
+
 .About {
     background-color: #ffca2cc4;
 }
-* {
-    /* Page Reset */
-    box-sizing: border-box;
-    /* Site Font */
-    /* font-weight: 300; */
-    /* font-size: 20px; */
-    /* scroll-behavior: smooth; */
-    /* font-family: 'Nunito', sans-serif; */
 
+* {
+    box-sizing: border-box;
   }
-  /* body{
-      margin: 0;
-      padding: 0;
-  } */
+
 
   :root {
       --white: #fff;
@@ -100,21 +92,21 @@
   }
 
   .about-item.who {
-    background: url("../PIC/aboutUs/about1.jpg");
+    background: url("../Images/About1.jpg");
     display: block;
     background-position: center;
     background-size: cover;
   }
 
   .about-item.process {
-    background: url("../PIC/aboutUs/about2.jpg");
+    background: url("../Images/About3.webp");
     display: block;
     background-position: center;
     background-size: cover;
   }
 
   .about-item.contact {
-    background: url("../PIC/aboutUs/about3.jpg");
+    background: url("../Images/About2.jpg");
     display: block;
     background-position: center;
     background-size: cover;
@@ -216,7 +208,7 @@
 .Head{
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url("../Images/About.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url("../Images/About-.jpg");
     position: relative;
     background-size: cover;
     background-position: center;
@@ -328,3 +320,35 @@ div>h3
 
 
 /* ///////////////////////// END CSS FOR LANDING PAGE AND NAV BAR////////////////////// */
+
+
+
+@media screen and (max-width: 1123px) {
+    .Head {
+        height: 80vh;
+    }
+
+    .navFlex {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .Logo {
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .SearchBar {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+}

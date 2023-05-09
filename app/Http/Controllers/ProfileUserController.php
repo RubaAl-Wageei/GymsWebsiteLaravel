@@ -91,7 +91,8 @@ class ProfileUserController extends Controller
         }
         // $user->role = $request->role;
         $user->save();
-        return redirect('ProfileUser');
+        // return redirect('ProfileUser');
+        return redirect()->action('App\Http\Controllers\ProfileUserController@show',$id);
 
     }
 

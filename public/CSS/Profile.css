@@ -10,9 +10,10 @@
 }
 
 .Head{
-    height: 110vh;
+    height: 70vh;
     width: 100%;
-    background-image: linear-gradient(rgba(44, 46, 48, 0.5),rgba(255, 202, 44, 0.7));
+    /* background-image: linear-gradient(rgba(44, 46, 48, 0.5),rgba(255, 202, 44, 0.7)); */
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url("../Images/Profile.jpg");
     /* background-color:gr #b6aeab; */
     position: relative;
     background-size: cover;
@@ -117,6 +118,51 @@ nav ul li a:hover{
     color: #ffca2cc4;
 
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 1123px) {
+    .Head {
+        height: 80vh;
+    }
+
+    .navFlex {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .Logo {
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .SearchBar {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .Subject{
+        display: none;
+    }
+}
+
+
+
+
+
 
 
 
@@ -445,7 +491,7 @@ body {
 
 .page-content
 {
-    margin-left:30px;
+    margin-left:100px;
 }
 .card {
     border-radius: 5%;
@@ -468,8 +514,8 @@ body {
 }
 
 .bg-c-lite-green {
-        background: -webkit-gradient(linear, left top, right top, from(#3f0531), to(#8a1256));
-    background: linear-gradient(to right, #990b52, #f26390);
+        background: -webkit-gradient(linear, left top, right top, from(#f5b802c4), to(#ffca2cc4));
+    background: linear-gradient(to right, #f6d981c4, #ffca2cc4);
 }
 
 .user-profile {
