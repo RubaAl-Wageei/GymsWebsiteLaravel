@@ -48,10 +48,6 @@ Route::get('/PersonalTrainers', function () {
     return view('Website.PersonalTrainers');
 });
 
-// Route::get('/Products', function () {
-//     return view('Website.Product');
-// });
-
 Route::get('/About', function () {
     return view('Website.About');
 });
@@ -149,26 +145,5 @@ Route::controller(RegisterController::class)->group(function(){
     Route::post('logout', 'destroy')->name('logout');
 });
 
-// Route::get('/Account', function () {
-//     return view('account');
-// });
 
-
-// Route::get('/Table', function () {
-//     return view('Table');
-// });
-
-
-// Route::get('/CUser', function () {
-//     return view('CreateUser');
-// });
-
-
-Route::get('/form', function () {
-    return view('index');
-});
-
-Route::get('/nav', function () {
-    return view('Nav');
-});
 

@@ -132,16 +132,11 @@
 											<input type="hidden" class="form-control bg-transparent" id="HomeService" placeholder="TrainerName" name="TrainerName" value="{{ $PersonalTrainer->Name }}">
 										</div>
 									</div>
-
 								</div>
-
 								<div class="btn">
 									<button class="submit-btn btnSubmit">Submit</button>
                                     <button class="submit-btn"><a href="/TrainerUser" style="text-decoration-line: none;color:white">Cancle</a></button>
 								</div>
-								{{-- <div class="form-btn">
-									<button class="submit-btn">Cancle</button>
-								</div> --}}
 							</form>
 						</div>
 					</div>

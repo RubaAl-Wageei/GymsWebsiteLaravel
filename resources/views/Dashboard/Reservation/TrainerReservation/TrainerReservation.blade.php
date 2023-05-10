@@ -97,33 +97,23 @@
 
 
                         <td>
-                          <div  >
+                            <div  >
                             {{-- ///////////////////// --}}
+                                <form  action="{{route('TrainerReservation.update', $value->id)}}" method="POST" enctype="multipart/form-data">
+                                    @csrf
+                                    @method('PUT')
+                                    <input type="hidden" name="status" value="Accepted">
+                                    <button type="submit" style="border: none ; background-color:white"><i class='bx bxl-ok-ru' style="color:green"></i></button>
+                                </form>
 
-                          <form  action="{{route('GymReservation.update', $value->id)}}" method="POST" enctype="multipart/form-data">
-                            @csrf
-                            @method('PUT')
-                            <input type="hidden" name="status" value="Accepted">
-                            <button type="submit" style="border: none ; background-color:white"><i class='bx bxl-ok-ru' style="color:green"></i></button>
-                          </form>
-
-                            <form  action="{{route('GymReservation.update', $value->id)}}" method="POST" enctype="multipart/form-data">
-                              @csrf
-                              @method('PUT')
-                              <input type="hidden" name="status" value="Rejected">
-                              <button type="submit" style="border: none ; background-color:white"><i class='bx bx-no-entry' style="color:red"></i></button>
-                            </form>
-
-                      </div>
-
-                            {{-- <form action="{{Route('salonServices.destroy',$salonService->id)}}" method="POST" >
-                                @method('DELETE')
-                                @csrf
-                                <button type="submit" class="btn btn-outline-primary">Delete</button>
-                              </form>  --}}
-
-                          </td>
-
+                                <form  action="{{route('TrainerReservation.update', $value->id)}}" method="POST" enctype="multipart/form-data">
+                                    @csrf
+                                    @method('PUT')
+                                    <input type="hidden" name="status" value="Rejected">
+                                    <button type="submit" style="border: none ; background-color:white"><i class='bx bx-no-entry' style="color:red"></i></button>
+                                </form>
+                            </div>
+                        </td>
                       </tr>
                         @endforeach
                     </tbody>

@@ -27,7 +27,6 @@
                 <li><a href="/">HOME</a></li>
                 <li><a href="/GymUser">GYMS</a></li>
                 <li><a href="/TrainerUser">PERSONAL TRAINERS</a></li>
-                {{-- <li><a href="">PRODUCT</a></li> --}}
                 <li><a href="/About">ABOUT</a></li>
                 <li><a href="{{route('Contact.create')}}">CONTACT</a></li>
                 @if (!Auth::user())
@@ -51,26 +50,11 @@
                         <i class="fas fa-search"></i>
                     </a>
                 </div>
-                   {{--  start icon for navbar --}}
-                <div class="icons">
-                    <a href=""> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <circle cx="12" cy="12" r="9"></circle>
-                        <line x1="3.6" y1="9" x2="20.4" y2="9"></line>
-                        <line x1="3.6" y1="15" x2="20.4" y2="15"></line>
-                        <path d="M11.5 3a17 17 0 0 0 0 18"></path>
-                        <path d="M12.5 3a17 17 0 0 1 0 18"></path>
-                    </svg> </a>
-                </div>
-                   {{--  end icon for navbar --}}
-
         </nav>
-
     </div>
 
 
     <section>
-
         {{-- just to read information  --}}
         <div class="page-content page-container" id="page-content">
             <div class="padding">

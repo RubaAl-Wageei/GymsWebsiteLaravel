@@ -15,57 +15,6 @@
     <link rel="stylesheet" href="{{ URL::asset('CSS/Home.css') }}">
 </head>
 <body>
-
-    {{-- <div class="Head">
-        <nav class="navFlex">
-            <img class="Logo" src="../Images/ResponsiveLogo.png">
-                <ul>
-                    <li><a href="/" style="color:#ffca2cc4;">HOME</a></li>
-                    <li><a href="/GymUser">GYMS</a></li>
-                    <li><a href="/TrainerUser">PERSONAL TRAINERS</a></li>
-                    <li><a href="/About">ABOUT</a></li>
-                    <li><a href="{{route('Contact.create')}}">CONTACT</a></li>
-                    @if (!Auth::user())
-                    <li><a href="/Register">REGISTER</a></li>
-                   <li><a href="/Login">LOGIN</a></li>
-
-                   @else
-                   @if (auth()->user()->Role!='User')
-                   <li><a href="{{ route('UserProfile.show', auth()->user()->id)}}">PROFILE</a></li>
-                   <li><a href="/Admin" target="_blank">DASHBOARD</a></li>
-                   <li><a href="{{route('logout')}}">LOGOUT</a></li>
-
-                   @else
-
-                   <li><a href="{{ route('UserProfile.show', auth()->user()->id)}}">PROFILE</a></li>
-                   <li><a href="{{route('logout')}}">LOGOUT</a></li>
-
-                   @endif
-                    @endif
-                </ul>
-                <div class="SearchBar">
-                    <input class="searchInp" type="text" placeholder="Search...">
-                    <a href="#">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </div>
-
-                <div class="icons">
-                    <a href=""> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <circle cx="12" cy="12" r="9"></circle>
-                        <line x1="3.6" y1="9" x2="20.4" y2="9"></line>
-                        <line x1="3.6" y1="15" x2="20.4" y2="15"></line>
-                        <path d="M11.5 3a17 17 0 0 0 0 18"></path>
-                        <path d="M12.5 3a17 17 0 0 1 0 18"></path>
-                    </svg> </a>
-                </div>
-        </nav>
-    </div> --}}
-
-
-
-
     <div class="Head">
         <nav class="navFlex">
             <img class="Logo" src="../Images/LOGOO.png">
@@ -114,7 +63,19 @@
         </div>
 
         <div class="cards">
-            <div class="card" style="width: 18rem;">
+            <div class="card">
+                <img id="img" src="../Images/GYM.jpg" alt="GYM Image" style="width:100%">
+                <h2>GYM</h2>
+                <p class="tittle">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p><button> <a href="/GymUse" >SHOW GYMS</a> </button></p>
+            </div>
+            <div class="card">
+                <img id="img" src="../Images/PersonalTrainer.jpg" alt="GYM Image" style="width:100%">
+                <h2>PERSONAL TRAINER</h2>
+                <p class="tittle">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p><button> <a href="/TrainerUser" >SHOW TRAINERS</a> </button></p>
+            </div>
+            {{-- <div class="card" style="width: 18rem;">
                 <img src="../Images/GYM.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">GYM</h5>
@@ -129,7 +90,7 @@
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="/TrainerUser" class="btn btn-warning">SHOW TRAINERS</a>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
 

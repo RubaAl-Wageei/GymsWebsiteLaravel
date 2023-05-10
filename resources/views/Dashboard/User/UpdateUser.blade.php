@@ -59,24 +59,6 @@
                             </div>
                           </div>
                         </div>
-                        {{-- <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Company</label>
-                          <div class="col-sm-10">
-                            <div class="input-group input-group-merge">
-                              <span id="basic-icon-default-company2" class="input-group-text"
-                                ><i class="bx bx-buildings"></i
-                              ></span>
-                              <input
-                                type="text"
-                                id="basic-icon-default-company"
-                                class="form-control"
-                                placeholder="ACME Inc."
-                                aria-label="ACME Inc."
-                                aria-describedby="basic-icon-default-company2"
-                              />
-                            </div>
-                          </div>
-                        </div> --}}
                         <div class="row mb-3">
                           <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Email</label>
                           <div class="col-sm-10">
@@ -191,26 +173,7 @@
                                   </select>
                               </div>
                             </div>
-
                           </div>
-
-                        {{-- <div class="row mb-3">
-                          <label class="col-sm-2 form-label" for="basic-icon-default-message">Message</label>
-                          <div class="col-sm-10">
-                            <div class="input-group input-group-merge">
-                              <span id="basic-icon-default-message2" class="input-group-text"
-                                ><i class="bx bx-comment"></i
-                              ></span>
-                              <textarea
-                                id="basic-icon-default-message"
-                                class="form-control"
-                                placeholder="Hi, Do you have a moment to talk Joe?"
-                                aria-label="Hi, Do you have a moment to talk Joe?"
-                                aria-describedby="basic-icon-default-message2"
-                              ></textarea>
-                            </div>
-                          </div>
-                        </div> --}}
                         <div class="row justify-content-end">
                           <div class="col-sm-10">
                             <button type="submit" class="btn btn-warning">Save</button>

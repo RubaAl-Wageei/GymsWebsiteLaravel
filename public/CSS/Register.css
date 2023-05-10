@@ -165,15 +165,6 @@ nav ul li a:hover{
 }
 
 
-/* .Homevid{
-position: absolute;
-width: 100%;
-right: 0px;
-bottom: 0px;
-z-index: -1;
-height: 100vh;
-} */
-
 
 @media (min-aspect-ratio: 16/9){
     .Homevid{

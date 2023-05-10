@@ -15,17 +15,11 @@
 <body>
     <div class="Head">
         <nav class="navFlex">
-
             <img class="Logo" src="../Images/LOGOO.png">
-
-            <!-- <video autoplay loop muted plays-inline class="Homevid">
-                <source src="../Videos/POWER  🔥 GYM MOTIVATION.mp4" type="video/mp4">
-            </video> -->
                 <ul>
                     <li><a href="/">HOME</a></li>
                     <li><a href="/GymUser" style="color:#ffca2cc4;">GYMS</a></li>
                     <li><a href="/TrainerUser">PERSONAL TRAINERS</a></li>
-                    {{-- <li><a href="">PRODUCT</a></li> --}}
                     <li><a href="/About">ABOUT</a></li>
                     <li><a href="{{route('Contact.create')}}">CONTACT</a></li>
                     @if (!Auth::user())
@@ -45,14 +39,7 @@
 
                    @endif
                     @endif
-                    {{-- <li><a href="/Login">LOGIN</a></li> --}}
                 </ul>
-                {{-- <div class="SearchBar">
-                    <input class="searchInp" type="text" placeholder="Search...">
-                    <a href="#">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </div> --}}
                 <form action="{{ route('search.searchGym') }}" method="post" >
                     @csrf
                     <div class="SearchBar">
@@ -62,19 +49,6 @@
                         </a>
                     </div>
                 </form>
-
-                <div>
-
-                    <a href=""> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <circle cx="12" cy="12" r="9"></circle>
-                        <line x1="3.6" y1="9" x2="20.4" y2="9"></line>
-                        <line x1="3.6" y1="15" x2="20.4" y2="15"></line>
-                        <path d="M11.5 3a17 17 0 0 0 0 18"></path>
-                        <path d="M12.5 3a17 17 0 0 1 0 18"></path>
-                    </svg> </a>
-                 </div>
-
         </nav>
 
         <div class="Subject">
@@ -103,44 +77,7 @@
                     <p class="tittle">{{$gym->Description}}</p>
                     <p><button> <a href="{{route('UserGymBook.show',$gym->id)}}" >BOOK NOW</a> </button></p>
                 </div>
-
                 @endforeach
-
-                {{-- <div class="card">
-                    <img src="../Images/HittGym.png" alt="HITT GYM" style="width:100%">
-                    <h2>HIT GYM</h2>
-                    <p class="tittle">information Hit Gym</p>
-                    <p><button> <a href="" >BOOK NOW</a> </button></p>
-                </div>
-
-                <div class="card">
-                    <img id="img" src="../Images/HydrogenGym.png" alt="HYDROGEN GYM" style="width:100%">
-                    <h2>HYDROGEN GYM</h2>
-                    <p class="tittle">information Hydrogen Gym</p>
-                    <p><button> <a href="" >BOOK NOW</a> </button></p>
-                </div>
-
-                <div class="card">
-                    <img id="img" src="../Images/LifetimeGym.png" alt="LIFETIME GYM" style="width:100%">
-                    <h2>LIFETIME GYM</h2>
-                    <p class="tittle">information LifeTime Gym</p>
-                    <p><button> <a href="" >BOOK NOW</a> </button></p>
-                </div>
-
-                <div class="card">
-                    <img src="../Images/PowerHutGym.png" alt="POWERHUT GYM" style="width:100%">
-                    <h2>POWERHUT GYM</h2>
-                    <p class="tittle">information PowerHut Gym</p>
-                    <p><button> <a href="" >BOOK NOW</a> </button></p>
-                </div>
-
-                <div class="card">
-                    <img src="../Images/GoldenGym.png" alt="GOLDEN GYM" style="width:100%">
-                    <h2>GOLDEN GYM</h2>
-                    <p class="tittle">information Golden Gym</p>
-                    <p><button> <a href="" >BOOK NOW</a> </button></p>
-                </div> --}}
-
             </div>
         </section>
 

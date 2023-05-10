@@ -49,7 +49,6 @@ class CategoryController extends Controller
         $category->Description = $request->description;
         $category->Image = $category_img;
         $category->save();
-        // return view('Users');
         return redirect('category');
     }
 

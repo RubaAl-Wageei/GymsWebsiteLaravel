@@ -43,14 +43,7 @@
 
                    @endif
                     @endif
-                    {{-- <li><a href="/Login">LOGIN</a></li> --}}
                 </ul>
-                {{-- <div class="SearchBar">
-                    <input class="searchInp" type="text" placeholder="Search...">
-                    <a href="#">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </div> --}}
                 <form action="{{ route('search.searchGym') }}" method="post" >
                     @csrf
                     <div class="SearchBar">
@@ -92,41 +85,6 @@
                 </div>
 
                 @endforeach
-
-                {{-- <div class="card">
-                    <img src="../Images/HittGym.png" alt="HITT GYM" style="width:100%">
-                    <h2>HIT GYM</h2>
-                    <p class="tittle">information Hit Gym</p>
-                    <p><button> <a href="" >BOOK NOW</a> </button></p>
-                </div>
-
-                <div class="card">
-                    <img id="img" src="../Images/HydrogenGym.png" alt="HYDROGEN GYM" style="width:100%">
-                    <h2>HYDROGEN GYM</h2>
-                    <p class="tittle">information Hydrogen Gym</p>
-                    <p><button> <a href="" >BOOK NOW</a> </button></p>
-                </div>
-
-                <div class="card">
-                    <img id="img" src="../Images/LifetimeGym.png" alt="LIFETIME GYM" style="width:100%">
-                    <h2>LIFETIME GYM</h2>
-                    <p class="tittle">information LifeTime Gym</p>
-                    <p><button> <a href="" >BOOK NOW</a> </button></p>
-                </div>
-
-                <div class="card">
-                    <img src="../Images/PowerHutGym.png" alt="POWERHUT GYM" style="width:100%">
-                    <h2>POWERHUT GYM</h2>
-                    <p class="tittle">information PowerHut Gym</p>
-                    <p><button> <a href="" >BOOK NOW</a> </button></p>
-                </div>
-
-                <div class="card">
-                    <img src="../Images/GoldenGym.png" alt="GOLDEN GYM" style="width:100%">
-                    <h2>GOLDEN GYM</h2>
-                    <p class="tittle">information Golden Gym</p>
-                    <p><button> <a href="" >BOOK NOW</a> </button></p>
-                </div> --}}
 
             </div>
         </section>

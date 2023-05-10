@@ -35,8 +35,6 @@
 
                    @endif
                     @endif
-                    <!-- <li><a href="">REGISTER</a></li> -->
-                    {{-- <li><a href="/Login">LOGIN</a></li> --}}
                     </ul>
                     {{-- search icon in nav bar --}}
                      <div class="SearchBar">
@@ -46,11 +44,7 @@
                         </a>
                     </div>
             </nav>
-            {{-- <div class="title">.</div>
-                <div >
-                    <h3>ABOUT US</h3>
-                </div>
-            </div> --}}
+            
 
       </div>
         <!-- ----------------------------END SECTION FOR LANDING PAGE---------------------------------------- -->

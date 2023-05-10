@@ -13,12 +13,7 @@
 <body>
     <div class="Head">
         <nav class="navFlex">
-
             <img class="Logo" src="../Images/LOGOO.png">
-
-            <!-- <video autoplay loop muted plays-inline class="Homevid">
-                <source src="../Videos/POWER  🔥 GYM MOTIVATION.mp4" type="video/mp4">
-            </video> -->
                 <ul>
                     <li><a href="/">HOME</a></li>
                     <li><a href="/GymUser" >GYMS</a></li>
@@ -43,7 +38,6 @@
 
                    @endif
                     @endif
-                    {{-- <li><a href="/Login">LOGIN</a></li> --}}
                 </ul>
                 <div class="SearchBar">
                     <input class="searchInp" type="text" placeholder="Search...">

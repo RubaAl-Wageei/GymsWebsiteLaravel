@@ -42,10 +42,6 @@ class UserController extends Controller
     public function store(Request $request)
     {
         //
-        // $user_img = $request->file('image')->getClientOriginalName();
-        // $request->file('image')->storeAs('public/Images',$user_img);
-        // var_dump($request->file('upload_file'));
-
         $user_img = $request->file('image')->getClientOriginalName();
         $request->file('image')->storeAs('public/Images',$user_img);
         var_dump($request->file('upload_file'));

@@ -26,28 +26,28 @@
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3 text-secondary"></i>GYMAZA
+              <i class="fas fa-gem me-3 text-secondary"></i>GOGOGYM
             </h6>
             <p>
               Here you can use rows and columns to organize your footer content. </p>
                     <!-- socialMedia -->
       <div>
-        <a href="" class="me-4 link-secondary icons">
+        <a href="https://www.facebook.com/" class="me-4 link-secondary icons">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="" class="me-4 link-secondary icons">
+        <a href="https://twitter.com/" class="me-4 link-secondary icons">
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="" class="me-4 link-secondary icons">
+        <a href="https://www.google.com/" class="me-4 link-secondary icons">
           <i class="fab fa-google"></i>
         </a>
-        <a href="" class="me-4 link-secondary icons">
+        <a href="https://www.instagram.com/" class="me-4 link-secondary icons">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="" class="me-4 link-secondary icons">
+        <a href="https://www.linkedin.com/" class="me-4 link-secondary icons">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="" class="me-4 link-secondary icons">
+        <a href="https://github.com/RubaAl-Wageei/GymsWebsiteLaravel" class="me-4 link-secondary icons">
           <i class="fab fa-github"></i>
         </a>
       </div>

@@ -79,43 +79,6 @@
                             </div>
                           </div>
                         </div>
-                        {{-- <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Company</label>
-                          <div class="col-sm-10">
-                            <div class="input-group input-group-merge">
-                              <span id="basic-icon-default-company2" class="input-group-text"
-                                ><i class="bx bx-buildings"></i
-                              ></span>
-                              <input
-                                type="text"
-                                id="basic-icon-default-company"
-                                class="form-control"
-                                placeholder="ACME Inc."
-                                aria-label="ACME Inc."
-                                aria-describedby="basic-icon-default-company2"
-                              />
-                            </div>
-                          </div>
-                        </div> --}}
-                        {{-- <div class="row mb-3">
-                          <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Email</label>
-                          <div class="col-sm-10">
-                            <div class="input-group input-group-merge">
-                              <span class="input-group-text"><i class="bx bx-envelope"></i></span>
-                              <input
-                                type="email"
-                                id="basic-icon-default-email"
-                                class="form-control"
-                                placeholder="Gym Email"
-                                aria-label="Gym Email"
-                                aria-describedby="basic-icon-default-email2"
-                                name="email"
-                              />
-                              <span id="basic-icon-default-email2" class="input-group-text">@example.com</span>
-                            </div>
-                            <div class="form-text">You can use letters, numbers & periods</div>
-                          </div>
-                        </div> --}}
                         <div class="row mb-3">
                           <label class="col-sm-2 form-label" for="basic-icon-default-phone">Service Price</label>
                           <div class="col-sm-10">

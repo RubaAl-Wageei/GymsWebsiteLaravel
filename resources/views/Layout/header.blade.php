@@ -1,4 +1,4 @@
-{{-- 
+{{--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +15,7 @@
     <div class="Head">
         <nav class="navFlex">
 
-            <img class="Logo" src="../Images/logo.gif">
+            <img class="Logo" src="../Images/LOGOO.png">
 
             <!-- <video autoplay loop muted plays-inline class="Homevid">
                 <source src="../Videos/POWER  🔥 GYM MOTIVATION.mp4" type="video/mp4">

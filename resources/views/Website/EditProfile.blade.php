@@ -47,7 +47,6 @@
                 <li><a href="/">HOME</a></li>
                 <li><a href="/GymUser">GYMS</a></li>
                 <li><a href="/TrainerUser">PERSONAL TRAINERS</a></li>
-                {{-- <li><a href="">PRODUCT</a></li> --}}
                 <li><a href="/About">ABOUT</a></li>
                 <li><a href="{{route('Contact.create')}}">CONTACT</a></li>
                 @if (!Auth::user())
@@ -67,8 +66,6 @@
 
                    @endif
                     @endif
-                <!-- <li><a href="">REGISTER</a></li> -->
-                {{-- <li><a href="/Login" >LOGIN</a></li> --}}
             </ul>
                 {{-- search icon in nav bar --}}
                  <div class="SearchBar">

@@ -16,9 +16,6 @@ class GymController extends Controller
     {
         //
         $gyms=Gym::all();
-
-        //  return view('user.Salonat',compact('salons'));
-
         return view('Dashboard.Gym.Gyms',compact('gyms'));
 
     }
